@@ -70,7 +70,9 @@
 1. `metrics.upsert`: שורה לכל קמפיין לכל יום, עבור אתמול ועבור שלושת הימים שלפניו (מטא מתקנת נתונים בדיעבד). בהמשך מוסיפים גם שורות ברמת `adset` ו־`ad`. השדות: `platform: "meta"`, `level`, `account_id`, `campaign_id`, `campaign_name`, `date`, `currency`, `spend`, `impressions`, `reach`, `clicks`, `leads`, `status`, `objective`. אותו מזהה ואותו תאריך מעדכנים את השורה הקיימת, ולא נוצרת כפילות.
 2. `rules.evaluate`.
 3. `insights.list` עם `status: new`, כדי לא לחזור על המלצה שעדיין פתוחה.
-4. `insights.create` מסוג `summary`: סיכום אחד לתקופה, עם מספרים והשוואה לתקופה הקודמת.
+4. `insights.create` מסוג `summary`: סיכום אחד לתקופה, עם מספרים והשוואה לתקופה הקודמת. כל סיכום נפתח בשורה הזו, בכתב נטוי:
+   `<p><em>הדוח מתעדכן פעם ביום ב־08:00 ומציג נתונים עד אתמול ב־24:00. נתוני היום ייכנסו בעדכון של מחר.</em></p>`
+   נתוני היום לא מוזנים. הטווח האחרון שמוזן הוא אתמול.
 5. `insights.create` מסוג `recommendation` לכל המלצה, עם `insight_action` (`scale` / `pause` / `test` / `keep` / `fix`; לא `action`, שהוא שם הפעולה ב־API) ועם הקמפיין שהיא נוגעת אליו.
 6. `insights.create` מסוג `issue` עם `severity: warning|critical` רק כשמשהו דורש פעולה היום. זה שולח התראה לצוות הקמפיינים.
 
