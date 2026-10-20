@@ -71,7 +71,7 @@
 2. `rules.evaluate`.
 3. `insights.list` עם `status: new`, כדי לא לחזור על המלצה שעדיין פתוחה.
 4. `insights.create` מסוג `summary`: סיכום אחד לתקופה, עם מספרים והשוואה לתקופה הקודמת.
-5. `insights.create` מסוג `recommendation` לכל המלצה, עם `action` (`scale` / `pause` / `test` / `keep` / `fix`) ועם הקמפיין שהיא נוגעת אליו.
+5. `insights.create` מסוג `recommendation` לכל המלצה, עם `insight_action` (`scale` / `pause` / `test` / `keep` / `fix`; לא `action`, שהוא שם הפעולה ב־API) ועם הקמפיין שהיא נוגעת אליו.
 6. `insights.create` מסוג `issue` עם `severity: warning|critical` רק כשמשהו דורש פעולה היום. זה שולח התראה לצוות הקמפיינים.
 
 כל מספר שמופיע בתובנה צריך להופיע גם בנתונים שהוזנו.
