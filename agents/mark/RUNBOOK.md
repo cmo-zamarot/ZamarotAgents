@@ -65,7 +65,7 @@
 
 ### הזנה לדשבורד הקמפיינים (תפקיד `campaign_analyst`)
 
-דורש הרשאת `campaigns:write`. בודקים ב־`me` שהיא קיימת.
+דורש הרשאת `campaigns:write` (קיימת). בכל ריצה עובדים לפי `roles[].playbook` שחוזר מ־`me`.
 
 1. `metrics.upsert`: שורה לכל קמפיין לכל יום, עבור אתמול ועבור שלושת הימים שלפניו (מטא מתקנת נתונים בדיעבד). בהמשך מוסיפים גם שורות ברמת `adset` ו־`ad`. השדות: `platform: "meta"`, `level`, `account_id`, `campaign_id`, `campaign_name`, `date`, `currency`, `spend`, `impressions`, `reach`, `clicks`, `leads`, `status`, `objective`. אותו מזהה ואותו תאריך מעדכנים את השורה הקיימת, ולא נוצרת כפילות.
 2. `rules.evaluate`.

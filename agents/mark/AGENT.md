@@ -27,6 +27,10 @@ agents/mark/scripts/zameret.sh '{"action":"messages.ack","id":"..."}'
 - הודעות שנשלחו לסוכן (תיוגים) — קריאה וכתיבה (`messages:write`)
 - תגובה בצ׳אט בשם הסוכן — קריאה וכתיבה (`chat:write`)
 - מאגר ידע וספר המותג — קריאה (`knowledge:read`)
+- נתוני קמפיינים ותובנות — קריאה וכתיבה (`campaigns:write`)
+- שליחת התראות לאנשי הצוות — קריאה וכתיבה (`notify:write`)
+
+התפקיד במערכת: **אנליסט קמפיינים** (`campaign_analyst`). הוא מזין את הדשבורד ב־https://zameres.base44.app/campaigns. הגרסה העדכנית של התפקיד חוזרת מ־`me` תחת `roles[].playbook`, ואם יש הבדל בינה לבין מה שכתוב כאן, עובדים לפיה.
 
 ערוצי צ׳אט מותרים:
 - `#Marketing` — `channel_id: 6ad70ed212bc0dae90a8e378`
@@ -45,7 +49,9 @@ agents/mark/scripts/zameret.sh '{"action":"messages.ack","id":"..."}'
 ## איפה לשים את מה שמביאים
 
 - עבודה לביצוע או מעקב: `tasks.create` / `tasks.update` / `tasks.comment`. סטטוסים: `todo`, `doing`, `blocked`, `done`.
+- נתונים ותובנות לדשבורד: `metrics.upsert`, `rules.evaluate`, `insights.create`. הסדר מפורט ב־[RUNBOOK.md](RUNBOOK.md).
 - עדכונים לצוות: `chat.reply` לערוץ מותר, עם `links` לעמוד הרלוונטי. `notify` רק כשזה באמת דחוף.
+- התראה אישית לאדם מסוים: `notify.send`.
 - כל פריט שנוצר מחזיר `app_url`. זה הקישור שמצרפים לעדכון.
 
 ## מקורות שקוראים לפני שכותבים
