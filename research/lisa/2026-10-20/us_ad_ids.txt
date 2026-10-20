@@ -1,0 +1,108 @@
+# Meta Ad Library, countries=US, ACTIVE, searched 2026-10-20. Format: ad_id | page_name (page_id) | headline | search term
+# Only real-estate-investment advertisers kept (short-drama/novel/unrelated noise dropped).
+2111594720229529 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | raw land investing
+3354158248089564 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1425870823034942 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1638732117695720 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+29405561329116524 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+2535188296989370 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1417859139933639 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+2983292872004706 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1456450246392426 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1084727257767979 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1657125099115303 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1836117224080132 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1588695596603567 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1138573625173793 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+2325421641558237 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1497930052241694 | M&A DevCo-TTLF (949349338266265) | Builders Need 27,000 Lots a Year in Dallas. We Supply Them. | page_ids
+1903407880631337 | M&A DevCo (574088699113100) | Invest Before Vertical Construction Begins | raw land investing
+1792194281687602 | M&A DevCo (574088699113100) | Invest Before Vertical Construction Begins | raw land investing
+28611917298493509 | M&A DevCo (574088699113100) | Invest in the Land Behind Texas Growth | raw land investing
+1621969429460311 | M&A DevCo (574088699113100) | Invest In Texas Land Entitlement With A SDIRA | raw land investing
+1112477697903167 | Red Oak Development Group (1395859763603467) | Texas Land With a Short Target Hold | raw land investing
+1133059899279221 | Red Oak Development Group (1395859763603467) | Texas Land With a Short Target Hold | page_ids
+1124355973883906 | Red Oak Development Group (1395859763603467) | Texas Land With a Short Target Hold | page_ids
+1789757845392637 | Red Oak Development Group (1395859763603467) | Texas Land With a Short Target Hold | page_ids
+1646040553835878 | Red Oak Development Group (1395859763603467) | Texas Land With a Short Target Hold | page_ids
+1461379692513424 | Red Oak Development Group (1395859763603467) | Texas Land With a Short Target Hold | page_ids
+2176435306635403 | Red Oak Development Group (1395859763603467) | 300+ Accredited Investors Since 2014 | page_ids
+1085001501078826 | Red Oak Development Group (1395859763603467) | 300+ Accredited Investors Since 2014 | page_ids
+2254129675485449 | Red Oak Development Group (1395859763603467) | 300+ Accredited Investors Since 2014 | page_ids
+2321389005366011 | Red Oak Development Group (1395859763603467) | 300+ Accredited Investors Since 2014 | page_ids
+1041611038931980 | Red Oak Development Group (1395859763603467) | 300+ Accredited Investors Since 2014 | page_ids
+1504373208408958 | Red Oak Development Group (1395859763603467) | $100K Minimum. Accredited Only. | page_ids
+1798783997820021 | Red Oak Development Group (1395859763603467) | $100K Minimum. Accredited Only. | page_ids
+1430927191811988 | Red Oak Development Group (1395859763603467) | $100K Minimum. Accredited Only. | page_ids
+1679260590599103 | Red Oak Development Group (1395859763603467) | $100K Minimum. Accredited Only. | page_ids
+1417315769933064 | Red Oak Development Group (1395859763603467) | $100K Minimum. Accredited Only. | page_ids
+2081998905901857 | Terra Nova Land Development (1390540347472970) | What If the Buyer Signs First? | land fund accredited investors
+28768602472748767 | Terra Nova Land Development (1390540347472970) | What If the Buyer Signs First? | land fund accredited investors
+2019945501999374 | Terra Nova Land Development (1390540347472970) | What If the Buyer Signs First? | page_ids
+1690645929395455 | Terra Nova Land Development (1390540347472970) | What If the Buyer Signs First? | page_ids
+1115136351488416 | Terra Nova Land Development (1390540347472970) | Oct 22 at 7 PM — Register Free! | page_ids
+935363112730885 | Terra Nova Land Development (1390540347472970) | Oct 22 at 7 PM — Register Free! | page_ids
+1141611258435215 | AlliedInvestments (637562236114833) | Invest in American Land with Allied Development | land fund accredited investors
+1137949618774141 | AlliedInvestments (637562236114833) | 15% Annual Preferred Return | land fund accredited investors
+2084315386304293 | AlliedInvestments (637562236114833) | 15% Annual Preferred Return | land fund accredited investors
+1649286800205685 | AlliedInvestments (637562236114833) | 15% Preferred Return | land fund accredited investors
+1645893257270147 | AlliedInvestments (637562236114833) | 15% Preferred Return | page_ids
+1846059213483724 | AlliedInvestments (637562236114833) | Passive Real Estate Returns Without Owning Property | land fund accredited investors
+1068948692644512 | AlliedInvestments (637562236114833) | Passive Real Estate Returns Without Owning Property | land fund accredited investors
+4492429664331835 | AlliedInvestments (637562236114833) | Passive Real Estate Returns Without Owning Property | land fund accredited investors
+1140089718597081 | AlliedInvestments (637562236114833) | Passive Real Estate Returns Without Owning Property | land fund accredited investors
+1875987413780029 | AlliedInvestments (637562236114833) | Passive Real Estate Returns Without Owning Property | land fund accredited investors
+3429097103945941 | Altinvest (1179280461925225) | Invest in the Land Under Mobile Home Communities | land fund accredited investors
+1688101676269583 | Altinvest (1179280461925225) | Invest in the Land Under Mobile Home Communities | land fund accredited investors
+1812689436434197 | Altinvest (1179280461925225) | Invest in the Land Under Mobile Home Communities | land fund accredited investors
+937154289188803 | Altinvest (1179280461925225) | Invest in the Land Under Mobile Home Communities | land fund accredited investors
+1585432329387975 | Altinvest (1179280461925225) | Invest in the Land Under Mobile Home Communities | land fund accredited investors
+39116601227984269 | Novacrest Investment Group (104095514600544) | Land and commercial real estate in Leesburg, FL | land fund accredited investors
+1629430548624477 | Novacrest Investment Group (104095514600544) | go.novacrest.co | land fund accredited investors
+2132946337343970 | Clever Capital (1146658158536164) | Free Access for Accredited Investors | land fund accredited investors
+1638338997702196 | Clever Capital (1146658158536164) | Free Access for Accredited Investors | land fund accredited investors
+2255803648536089 | Clever Capital (1146658158536164) | Free Access for Accredited Investors | land fund accredited investors
+1113090401578576 | Clever Capital (1146658158536164) | Free Access for Accredited Investors | land fund accredited investors
+1044114905307678 | Blue Capital RV Fund (738334832691965) | Invest in the Park. Depreciate the Improvements. | land fund accredited investors
+1828082884865186 | The Real Estate Crowdfunding Review (843168609092503) | See which AI deals passed due diligence | accredited investors real estate
+1510167344222870 | The Real Estate Crowdfunding Review (843168609092503) | Due diligence no sponsor paid for | accredited investors real estate
+1108722835453319 | The Real Estate Crowdfunding Review (843168609092503) | Join 7,813+ private investors | accredited investors real estate
+4747942862092147 | Nate Armstrong (2323723264307126) | [Accredited Investors] Judge the Building, Not the Number | accredited investors real estate
+1103644282303160 | TradeREA (1086188941234195) | Looking Beyond Traditional Investments? | accredited investors real estate
+28705088609154128 | TradeREA (1086188941234195) | Looking Beyond Traditional Investments? | accredited investors real estate
+1653676679623268 | TradeREA (1086188941234195) | Looking Beyond Traditional Investments? | accredited investors real estate
+1110052108385674 | TradeREA (1086188941234195) | Accredited Investors: Explore 3100 Weston Road | accredited investors real estate
+1777507116833199 | TradeREA (1086188941234195) | Accredited Investors: Explore 3100 Weston Road | accredited investors real estate
+1824804558667738 | New Blueprint Partners (544982942026397) | Target 18% IRR In Industrial Real Estate | accredited investors real estate
+1618067069864762 | New Blueprint Partners (544982942026397) | Target 18% IRR In Industrial Real Estate | accredited investors real estate
+1724106282012514 | New Blueprint Partners (544982942026397) | Target 18% IRR In Industrial Real Estate | accredited investors real estate
+1128177116295037 | New Blueprint Partners (544982942026397) | Target 18% IRR In Industrial Real Estate | accredited investors real estate
+1127868119761959 | New Blueprint Partners (544982942026397) | Target 18% IRR In Industrial Real Estate | accredited investors real estate
+1133964089064548 | Ascend Capital Partners (1025193037334004) | Up to 18% Annual Return | accredited investors real estate
+967415892571103 | Ascend Capital Partners (1025193037334004) | Up to 18% Annual Return | accredited investors real estate
+1416808511513624 | Ascend Capital Partners (1025193037334004) | Up to 18% Annual Return | accredited investors real estate
+2094108588136065 | Ascend Capital Partners (1025193037334004) | Up to 18% Annual Return | accredited investors real estate
+1104649775892102 | Sage Investment Group, LLC (104086341910365) | Evergreen Hotel to Apartment Conversion Opportunities | accredited investors real estate
+1880990019942820 | Sage Investment Group, LLC (104086341910365) | Evergreen Hotel to Apartment Conversion Opportunities | accredited investors real estate
+3415011255338590 | Sage Investment Group, LLC (104086341910365) | Evergreen Hotel to Apartment Conversion Opportunities | accredited investors real estate
+1843784920312571 | Lightstone Direct (783440771509615) | Take a seat at our table. | accredited investors real estate
+1093012520289712 | Lightstone Direct (783440771509615) | Lightstone Direct | accredited investors real estate
+1676212220537889 | 52TEN (490377398013669) | Learn the Unique Tax Benefits | accredited investors real estate
+28783774954608715 | AMT Capital (1298394866680397) | 15% Annual Return | Paid Quarterly | accredited investors real estate
+2603907953446770 | Kellum Capital (1417752454748509) | Accredited Investors with 100k+ | 18.47% projected IRR. 2.28x projected equity multiple. | accredited investors real estate
+2472386000248575 | The Offer Sheet (113039277841534) | Physicians with $150K+ set aside | real estate syndication (+12 more same headline)
+1448827013371005 | REI Accelerator (106442302542519) | Scale from under 5 Doors to 50+ Doors | real estate syndication (education; many duplicates)
+1739260330481857 | Titan Network (102423656008270) | Join over 2,000 investors! | passive real estate investing
+2214121225814044 | Active Duty Passive Income (236296416853166) | Schedule Your Strategy Call | passive real estate investing
+1631500605439331 | Active Duty Passive Income (236296416853166) | Schedule Your Strategy Call | passive real estate investing
+1682273400002525 | Kinect REP (1356446037541928) | Explore the Gresham OZ Fund | opportunity zone fund
+2123360991908575 | Mayflower QOZ Investment (1356196227570643) | (no title) | opportunity zone fund
+922711590703488 | Cochran Capital (112863905205004) | Live Webinar: See the $1M model explained live. | opportunity zone fund
+1786300635749799 | FISYN FUND (105700505751207) | 12% Annualized Distributions + 20% Equity Participation | raw land investing
+1615625193446203 | The Land Geek (131131610290569) | Get Dirt Rich FREE Today! | raw land investing
+4467760630207229 | The Land Geek (131131610290569) | FREE Book. Real System. | raw land investing
+2248405692606676 | The Land Geek (131131610290569) | GET YOUR FREE BOOK AND LEARN EVERYTHING! | raw land investing
+2262437161213125 | The Land Geek (131131610290569) | MASSIVE ROI...AND NO MORE FLIPPING! | raw land investing
+1392563705783660 | The Land Geek (131131610290569) | Free Yourself From Your JOB (Without Flipping!) | raw land investing
+3873766812766181 | Chase Burns - LandGuys (793569200846261) | Your Weekly Local Land Update | raw land investing
+1798890144488169 | High Ticket Land Flipping (1051909714681934) | From $25k to $50k With Just ONE Deal... | raw land investing
