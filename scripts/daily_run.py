@@ -32,6 +32,8 @@ PLACES = {
     "בית שמש": "בית שמש", "מודיעין": "מודיעין", "רעננה": "רעננה", "הרצליה": "הרצליה",
     "כפר סבא": "כפר סבא", "הוד השרון": "הוד השרון", "פתח תקווה": "פתח תקווה",
     "נס ציונה": "נס ציונה", "קיסריה": "קיסריה", "זכרון יעקב": "זכרון יעקב", "טבריה": "טבריה",
+    "גני תקווה": "גני תקווה", "כפר תבור": "כפר תבור", "כיסרא": "כיסרא", "ראשל\"צ": "ראשון לציון",
+    "אור יהודה": "אור יהודה", "יהוד": "יהוד", "קריית שמונה": "קריית שמונה", "נהריה": "נהריה",
 }
 
 
@@ -53,8 +55,9 @@ def upload(path):
 def scrape(page_id, out_dir, max_n):
     r = subprocess.run(["node", str(SCRAPER), "page", page_id, str(out_dir), str(max_n)],
                        capture_output=True, text=True, timeout=400)
+    if r.stderr.strip():
+        print(f"[{page_id}] {r.stderr.strip()[-300:]}", file=sys.stderr)
     if r.returncode != 0:
-        print(f"scrape failed for {page_id}: {r.stderr[-500:]}", file=sys.stderr)
         return []
     return json.loads(r.stdout or "[]")
 
@@ -99,6 +102,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-per-page", type=int, default=15)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", help="page ids מופרדים בפסיק — להריץ רק עליהם")
     ap.add_argument("--work", default=os.environ.get("JENNY_WORK", "/tmp/jenny"))
     args = ap.parse_args()
     work = Path(args.work)
@@ -116,60 +120,80 @@ def main():
     known = {i.get("source_url") for i in api({"action": "intel.list", "kind": "competitor_ad", "limit": 1000}).get("items", [])}
 
     created, skipped, errors = [], 0, []
+    only = set(args.only.split(",")) if args.only else None
+    queue = [c for c in competitors if c.get("meta_page_id") and (not only or c["meta_page_id"] in only)]
+    empty = []
     first = True
-    for c in competitors:
-        pid = c.get("meta_page_id")
-        if not pid:
-            continue
-        if not first:  # בפייסבוק: לכל היותר חיפוש אחד לחצי דקה
-            time.sleep(FB_GAP_SECONDS)
-        first = False
-        ads = scrape(pid, work / pid, args.max_per_page)
-        for ad in ads:
-            if ad["source_url"] in known:
-                skipped += 1
-                continue
-            x = extract(ad)
-            loc = ", ".join(x["places"]) + (f" (מתחם {x['compound']})" if x["compound"] else "") if x["places"] else "לא ידוע"
-            price = f"החל מ־{fmt_ils(x['min_price'])} (לפי המודעה)" if x["min_price"] else "לא מופיע"
-            summary = (f"<p>מודעה פעילה של {c['name']} ב־Meta"
-                       + (f", רצה מאז {ad['started']}" if ad.get("started") else "") + ".</p>"
-                       f"<p>מיקום: {loc}. מחיר כניסה: {price}. שפת המודעה: {x['lang']}.</p>"
-                       "<p>הטענות במודעה הן לטענתם של המפרסם.</p>")
-            item = {
-                "action": "intel.create", "kind": "competitor_ad", "audience": "marketing",
-                "platform": "meta", "competitor_name": c["name"], "source_name": "Meta Ad Library",
-                "source_url": ad["source_url"], "title": x["headline"] or f"מודעה של {c['name']}",
-                "headlines": [x["headline"]] if x["headline"] else [],
-                "messages": x["lines"][:12], "location": loc if x["places"] else None,
-                "price_info": price if x["min_price"] else None,
-                "running_since": ad.get("started"), "summary": summary,
-                "tags": [t for t in ["קרקע", *x["places"], x["lang"]] if t],
-            }
-            item = {k: v for k, v in item.items() if v not in (None, [], "")}
-            if args.dry_run:
-                created.append({"competitor": c["name"], **{k: item.get(k) for k in ("title", "location", "price_info", "running_since", "source_url")}, "lang": x["lang"]})
-                continue
-            try:
-                if ad.get("shot"):
-                    f = upload(ad["shot"])
-                    if f:
-                        item["image"] = f
-                res = api(item)
-                if res.get("duplicate"):
-                    skipped += 1
-                    continue
-                known.add(ad["source_url"])
-                created.append({"competitor": c["name"], "title": item.get("title"), "location": item.get("location"),
-                                "price_info": item.get("price_info"), "running_since": item.get("running_since"),
-                                "lang": x["lang"], "source_url": ad["source_url"], "app_url": res.get("app_url")})
-            except Exception as e:  # ממשיכים לשאר המודעות
-                errors.append(f"{ad['source_url']}: {e}")
+    for rnd in range(2):  # סבב שני רק למי שחזר ריק (בדרך כלל האטה של פייסבוק)
+        if rnd:
+            queue, empty = empty, []
+            if not queue:
+                break
+            time.sleep(90)
+        for c in queue:
+            pid = c["meta_page_id"]
+            if not first:  # בפייסבוק: לכל היותר חיפוש אחד לחצי דקה
+                time.sleep(FB_GAP_SECONDS)
+            first = False
+            ads = scrape(pid, work / pid, args.max_per_page)
+            if not ads:
+                empty.append(c)
+            created_n, skipped_n, errs = process(c, ads, known, api, args.dry_run, created)
+            skipped += skipped_n
+            errors += errs
+    no_ads = [c["name"] for c in empty]
 
-    result = {"date": datetime.date.today().isoformat(), "new": created, "skipped_existing": skipped, "errors": errors}
+    result = {"date": datetime.date.today().isoformat(), "new": created, "skipped_existing": skipped,
+              "no_active_ads_or_blocked": no_ads, "errors": errors}
     if not args.dry_run:
         (STATE / "last_run.json").write_text(json.dumps(result, ensure_ascii=False, indent=1))
     print(json.dumps(result, ensure_ascii=False, indent=1))
+
+
+def process(c, ads, known, api, dry_run, created):
+    skipped, errors = 0, []
+    for ad in ads:
+        if ad["source_url"] in known:
+            skipped += 1
+            continue
+        x = extract(ad)
+        loc = ", ".join(x["places"]) + (f" (מתחם {x['compound']})" if x["compound"] else "") if x["places"] else "לא ידוע"
+        price = f"החל מ־{fmt_ils(x['min_price'])} (לפי המודעה)" if x["min_price"] else "לא מופיע"
+        summary = (f"<p>מודעה פעילה של {c['name']} ב־Meta"
+                   + (f", רצה מאז {ad['started']}" if ad.get("started") else "") + ".</p>"
+                   f"<p>מיקום: {loc}. מחיר כניסה: {price}. שפת המודעה: {x['lang']}.</p>"
+                   "<p>הטענות במודעה הן לטענתם של המפרסם.</p>")
+        item = {
+            "action": "intel.create", "kind": "competitor_ad", "audience": "marketing",
+            "platform": "meta", "competitor_name": c["name"], "source_name": "Meta Ad Library",
+            "source_url": ad["source_url"], "title": x["headline"] or f"מודעה של {c['name']}",
+            "headlines": [x["headline"]] if x["headline"] else [],
+            "messages": x["lines"][:12], "location": loc if x["places"] else None,
+            "price_info": price if x["min_price"] else None,
+            "running_since": ad.get("started"), "summary": summary,
+            "tags": [t for t in ["קרקע", *x["places"], x["lang"]] if t],
+        }
+        item = {k: v for k, v in item.items() if v not in (None, [], "")}
+        if dry_run:
+            created.append({"competitor": c["name"], **{k: item.get(k) for k in ("title", "location", "price_info", "running_since", "source_url")}, "lang": x["lang"]})
+            continue
+        try:
+            if ad.get("shot"):
+                f = upload(ad["shot"])
+                if f:
+                    item["image"] = f
+            res = api(item)
+            if res.get("duplicate"):
+                skipped += 1
+                continue
+            known.add(ad["source_url"])
+            created.append({"competitor": c["name"], "title": item.get("title"), "location": item.get("location"),
+                            "price_info": item.get("price_info"), "running_since": item.get("running_since"),
+                            "lang": x["lang"], "source_url": ad["source_url"], "app_url": res.get("app_url")})
+        except Exception as e:  # ממשיכים לשאר המודעות
+            errors.append(f"{ad['source_url']}: {e}")
+
+    return len(created), skipped, errors
 
 
 if __name__ == "__main__":
