@@ -13,6 +13,8 @@ import argparse, json, os, re, subprocess, sys, datetime, time
 from pathlib import Path
 
 FB_GAP_SECONDS = 35
+TRANSLATIONS = {}
+NEEDS_TRANSLATION = []  # מודעות לא בעברית בלי תרגום — ג׳ני מתרגמת ומריצה scripts/apply_translations.py
 
 ROOT = Path(__file__).resolve().parent.parent
 ZAMERET = ROOT / "scripts" / "zameret.sh"
@@ -94,6 +96,16 @@ def extract(ad):
     }
 
 
+def load_translations():
+    f = STATE / "translations.json"
+    return json.loads(f.read_text()) if f.exists() else {}
+
+
+def translation_html(he):
+    lines = "".join(f"<p>{l}</p>" for l in he.split("\n") if l.strip())
+    return f"<p><b>תרגום לעברית:</b></p>{lines}"
+
+
 def fmt_ils(n):
     return f"{n:,} ₪" if n else None
 
@@ -108,6 +120,7 @@ def main():
     work = Path(args.work)
     work.mkdir(parents=True, exist_ok=True)
 
+    TRANSLATIONS.update(load_translations())
     competitors = json.loads((STATE / "competitors.json").read_text())
     existing = {c["name"] for c in api({"action": "competitors.list"}).get("competitors", [])}
     for c in competitors:
@@ -138,13 +151,19 @@ def main():
             ads = scrape(pid, work / pid, args.max_per_page)
             if not ads:
                 empty.append(c)
+            before = len(created)
             created_n, skipped_n, errs = process(c, ads, known, api, args.dry_run, created)
+            if not args.dry_run and (ads or rnd):  # מדווחים על כל מתחרה שנבדק, גם בלי חדש
+                try:
+                    api({"action": "competitors.checked", "name": c["name"], "ads_live": len(ads), "new_ads": len(created) - before})
+                except Exception as e:
+                    errors.append(f"competitors.checked {c['name']}: {e}")
             skipped += skipped_n
             errors += errs
     no_ads = [c["name"] for c in empty]
 
     result = {"date": datetime.date.today().isoformat(), "new": created, "skipped_existing": skipped,
-              "no_active_ads_or_blocked": no_ads, "errors": errors}
+              "no_active_ads_or_blocked": no_ads, "needs_translation": NEEDS_TRANSLATION, "errors": errors}
     if not args.dry_run:
         (STATE / "last_run.json").write_text(json.dumps(result, ensure_ascii=False, indent=1))
     print(json.dumps(result, ensure_ascii=False, indent=1))
@@ -163,10 +182,14 @@ def process(c, ads, known, api, dry_run, created):
                    + (f", רצה מאז {ad['started']}" if ad.get("started") else "") + ".</p>"
                    f"<p>מיקום: {loc}. מחיר כניסה: {price}. שפת המודעה: {x['lang']}.</p>"
                    "<p>הטענות במודעה הן לטענתם של המפרסם.</p>")
+        tr = TRANSLATIONS.get(ad["library_id"], {}).get("he") if x["lang"] != "עברית" else None
+        if tr:
+            summary += translation_html(tr)
         item = {
             "action": "intel.create", "kind": "competitor_ad", "audience": "marketing",
             "platform": "meta", "competitor_name": c["name"], "source_name": "Meta Ad Library",
-            "source_url": ad["source_url"], "title": x["headline"] or f"מודעה של {c['name']}",
+            "source_url": ad["source_url"],
+            "title": (tr.split("\n")[0][:120] if tr else x["headline"]) or f"מודעה של {c['name']}",
             "headlines": [x["headline"]] if x["headline"] else [],
             "messages": x["lines"][:12], "location": loc if x["places"] else None,
             "price_info": price if x["min_price"] else None,
@@ -187,6 +210,9 @@ def process(c, ads, known, api, dry_run, created):
                 skipped += 1
                 continue
             known.add(ad["source_url"])
+            if x["lang"] != "עברית" and not tr:
+                NEEDS_TRANSLATION.append({"library_id": ad["library_id"], "intel_id": (res.get("intel") or {}).get("id"),
+                                          "lang": x["lang"], "text": ad.get("text")})
             created.append({"competitor": c["name"], "title": item.get("title"), "location": item.get("location"),
                             "price_info": item.get("price_info"), "running_since": item.get("running_since"),
                             "lang": x["lang"], "source_url": ad["source_url"], "app_url": res.get("app_url")})

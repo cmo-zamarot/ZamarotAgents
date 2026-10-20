@@ -15,7 +15,7 @@
 4. לכל משימה ב־open_tasks: `tasks.update` לסטטוס (`todo`/`doing`/`blocked`/`done`) ו־`tasks.comment` עם מה שנעשה.
 5. לפני כתיבה: `voice.get` (טון), ובמידת הצורך `knowledge.list`/`knowledge.get` ומודיעין המתחרים הקיים במערכת (`intel:read`).
 6. המחקר היומי (למטה).
-7. לכל ממצא: `intel.create` (מודעה → `kind: competitor_ad`, `audience: marketing`, `platform`, `source_url` = קישור ספריית המודעות; דף נחיתה → `kind: landing_page`; הצעה/מחיר → `kind: opportunity|price`, `audience: sales` עם `pros`/`cons`/`pitch`/`objections`). `source_url` הוא מפתח הכפילויות: `duplicate: true` = לא חדש. מתחרה חדש → `competitors.upsert`. `state/seen.json` הוא גיבוי מקומי בלבד.
+7. לכל ממצא: `intel.create` (מודעה → `kind: competitor_ad`, `audience: marketing`, `platform`, `source_url` = קישור ספריית המודעות; דף נחיתה → `kind: landing_page`; הצעה/מחיר → `kind: opportunity|price`, `audience: sales` עם `pros`/`cons`/`pitch`/`objections`). `source_url` הוא מפתח הכפילויות: `duplicate: true` = לא חדש. מתחרה חדש → `competitors.upsert`. לכל מתחרה שנבדק — `competitors.checked` (גם בלי חדש; `daily_run.py` עושה את זה). `state/seen.json` הוא גיבוי מקומי בלבד.
 8. אם לפחות פריט אחד לא היה duplicate: הודעה אחת ב־#Sales דרך `chat.reply`, עם `links`. `notify` רק אם דחוף באמת (למשל מתחרה שמשווק קרקע באותו אזור/מתחם שאנחנו משווקים, או מחיר כניסה נמוך משמעותית משלנו).
 9. אם אין חדש — לא כותבים לאף אחד.
 10. לעדכן `state/seen.json` ו־`state/competitors.md`, לבצע commit ו־push לענף העבודה.
@@ -25,6 +25,12 @@
 - **צילום מודעות:** `scripts/meta_ads_scrape.js` (Playwright + Chromium המותקן). חשוב: קישור ישיר למודעה (`?id=`) לא מציג כלום בלי התחברות — טוענים את עמוד המפרסם (`view_all_page_id`) או חיפוש מילות מפתח (`q`), ומצלמים כל כרטיס מודעה בנפרד. בפייסבוק עובדים לאט: לכל היותר חיפוש אחד לחצי דקה, ואם יש כמה — עם מרווחים (הסקריפט ממתין 35 שניות בין מפרסמים, וגם ניסיון חוזר ממתין 30 שניות לפחות). לא לטעון את פייסבוק במקביל.
 - **גילוי מתחרים חדשים:** `node scripts/meta_ads_scrape.js q "<מילות חיפוש>" <dir>` (או `mcp__Meta_Ads__ads_library_search` אם זמין), עם: "השקעה בקרקע", "קרקע להשקעה", "השבחה", "קרקע בטאבו", "ליווי עד מפתח", "קרקע חקלאית הפשרה", "קבוצת רכישה", "פינוי בינוי השקעה". מפרסם שחוזר בכמה מודעות → להוסיף ל־`state/competitors.json` עם ה־page id.
 - **חיפוש רשת** (WebSearch): כתבות ממומנות על קרקעות להשקעה, עמודי נחיתה חדשים, פרויקטים חדשים של המתחרים, מכרזי רמ"י, אישורי תב"ע באזורים שלהם. דף נחיתה → צילום עם Playwright → `intel.create` עם `kind: landing_page`.
+
+## מודעות שלא בעברית
+- לכל מודעה שלא בעברית (רוסית, אנגלית, ערבית וכו׳) מוסיפים מתחת למודעה **תרגום לעברית** של כל הטקסט, והכותרת בצמרת בעברית.
+- התרגומים נשמרים ב־`state/translations.json` לפי מזהה הספרייה: `{"<library_id>": {"lang": "רוסית", "he": "<תרגום>"}}`. `daily_run.py` מצרף אותם אוטומטית למודעות חדשות.
+- מודעה בלי תרגום מופיעה ב־`needs_translation` שב־`state/last_run.json`: מתרגמים (נאמן למקור, בלי להוסיף ובלי לקצר), מוסיפים ל־`translations.json` ומריצים `python3 -I scripts/apply_translations.py` (משתמש ב־`intel.update`).
+- בהודעה ל־#Sales כותבים בעברית בלבד, ומציינים שהמודעה במקור ברוסית/באנגלית.
 
 ## פורמט ההודעה ב־#Sales
 קצר ועובדתי, לפי voice.get. לכל פריט:
