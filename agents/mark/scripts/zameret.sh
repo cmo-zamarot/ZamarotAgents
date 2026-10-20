@@ -2,13 +2,14 @@
 # Call the Zameret agent API as Mark.
 #   zameret.sh docs | me            shorthand for {"action":"docs"} / {"action":"me"}
 #   zameret.sh '<json body>'        any other action
+#   zameret.sh @payload.json        body read from a file (large metrics.upsert batches)
 # The key is read from ZAMERET_API_KEY and never printed.
 set -euo pipefail
 
 URL="https://zameres.base44.app/api/apps/6ad66dc9b84e0b844217b719/functions/agent-api"
 
 case "${1:-}" in
-  "") echo "usage: $0 docs|me|'<json>'" >&2; exit 2 ;;
+  "") echo "usage: $0 docs|me|'<json>'|@file.json" >&2; exit 2 ;;
   docs|me) body="{\"action\":\"$1\"}" ;;
   *) body="$1" ;;
 esac
