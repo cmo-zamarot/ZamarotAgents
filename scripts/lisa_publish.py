@@ -15,11 +15,12 @@ import urllib.request
 URL = "https://zameres.base44.app/api/apps/6ad66dc9b84e0b844217b719/functions/agent-api"
 STATE = os.path.join(os.path.dirname(__file__), "..", "state", "lisa", "published.json")
 KEY = os.environ["ZAMERET_API_KEY"]
+UA = "zameret-agent-lisa/1.0 (curl-compatible)"
 
 
 def call(body):
     req = urllib.request.Request(URL, data=json.dumps(body).encode(), method="POST",
-                                 headers={"Content-Type": "application/json", "X-Api-Key": KEY})
+                                 headers={"Content-Type": "application/json", "X-Api-Key": KEY, "User-Agent": UA})
     with urllib.request.urlopen(req, timeout=120) as r:
         return json.load(r)
 
@@ -30,7 +31,7 @@ def upload(path):
     with open(path, "rb") as f:
         data = f.read()
     req = urllib.request.Request(f"{URL}?{q}", data=data, method="POST",
-                                 headers={"Content-Type": "image/png", "X-Api-Key": KEY})
+                                 headers={"Content-Type": "image/png", "X-Api-Key": KEY, "User-Agent": UA})
     with urllib.request.urlopen(req, timeout=300) as r:
         return json.load(r)["file"]
 
