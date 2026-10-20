@@ -44,7 +44,8 @@
 - אם צמרת לא נגישה (חסימת רשת / מפתח חסר): לא לפרסם בשום מקום אחר; לרשום את הממצאים ב־`state/` ולסיים.
 
 ## בניית קמפיינים במטא (Meta Ads) — חוקים קבועים
-- **מיקום:** בכל `targeting` לסט מודעות (ביצירה ובעדכון) לכתוב במפורש `"geo_locations": {"countries": ["IL"], "location_types": ["home", "recent"]}` ("גרים או היו לאחרונה"). בלי `location_types`, או עם `home`/`travel_in` לבד, Ads Manager חוסם את הסט עם השגיאה "Your audience contains a location targeting option that has been removed". אחרי כל עדכון לקרוא את הסט שוב, ואם מטא העבירה אותו ל־PAUSED להפעיל מחדש.
+- **מיקום:** לא לשלוח `location_types` בכלל, רק `"geo_locations": {"countries": ["IL"]}`. מטא ביטלה את סוגי המיקום ("גרים ב־", "נמצאים ב־", "היו לאחרונה"), ו־Ads Manager חוסם סט שמכיל אחד מהם עם השגיאה "Your audience contains a location targeting option that has been removed". `ads_get_errors` לא מזהה את השגיאה הזו, ולכן בכל קמפיין חדש לבקש מהמשתמש לבדוק את הסט ב־Ads Manager.
+- **לא לערוך טרגוט של סט קיים.** עדכון `targeting` ב־API לא מנקה את השגיאה ב־Ads Manager, ומעביר את הסט ל־PAUSED. במקום זה יוצרים סט חדש עם הטרגוט הנכון ומודעה חדשה עם אותו `creative_id`, משהים את הסט הישן ומפעילים את החדש.
 - **פיקסל:** לבדוק איזה פיקסל רץ בעמוד הנחיתה (`fbq('init', ...)`) ושהוא מחובר לחשבון המודעות, לפני שבוחרים מטרת המרה.
 - **טקסט מודעה:** להוריד סימני Markdown (`**`) מהטקסט שהמשתמש שולח, כי פייסבוק מציג אותם ככוכביות.
 - **קהל:** לשאול לפני שבונים אם הקמפיין מיועד לקהל מותאם (Custom Audience) מסוים. אם כן — `custom_audiences` עם `advantage_audience: 0`.
