@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>רובע הים חדרה</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="map.js"></script>
+<style>
+:root{
+  --navy:#0a1d3d; --deep:#06122a; --gold1:#f6dc96; --gold2:#d4a752; --gold3:#a8782c;
+  --sea:#5cc3e6; --white:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;overflow:hidden;background:var(--deep)}
+body{font-family:'Heebo',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+#stage{position:relative;width:1080px;height:1440px;overflow:hidden;background:var(--deep)}
+.scene{position:absolute;inset:0;overflow:hidden;opacity:0}
+.bg{position:absolute;inset:-40px;background-size:cover;background-position:center;will-change:transform}
+.shade{position:absolute;inset:0}
+.abs{position:absolute}
+.gold{background:linear-gradient(180deg,var(--gold1) 0%,var(--gold2) 55%,var(--gold3) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.w{display:inline-block;white-space:pre}
+.kicker{display:inline-flex;align-items:center;gap:14px;padding:12px 28px;border:2px solid rgba(246,220,150,.75);border-radius:999px;
+  font-weight:700;font-size:36px;letter-spacing:.5px;color:var(--gold1);background:rgba(6,18,42,.55)}
+.kicker i{width:12px;height:12px;border-radius:50%;background:var(--gold2);display:inline-block}
+.h1{font-weight:900;font-size:112px;line-height:1.02;text-shadow:0 6px 30px rgba(0,0,0,.45)}
+.h2{font-weight:900;font-size:84px;line-height:1.05}
+.body{font-weight:500;font-size:44px;line-height:1.3}
+.rule{height:4px;background:linear-gradient(90deg,transparent,var(--gold2),var(--gold1));transform-origin:right center}
+.title{right:80px;left:80px;text-align:right}
+
+/* persistent */
+#logo{position:absolute;top:56px;left:64px;width:150px;opacity:.95;filter:brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,.4));z-index:50}
+#legal{position:absolute;bottom:30px;right:0;left:0;text-align:center;font-size:24px;font-weight:400;color:rgba(255,255,255,.72);z-index:50;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#wipe{position:absolute;top:0;bottom:0;width:200px;z-index:40;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(246,220,150,.0) 20%,rgba(246,220,150,.55) 50%,rgba(246,220,150,0) 80%,transparent);opacity:0}
+
+/* map */
+#mapsvg{position:absolute;inset:0}
+.lbl{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-weight:700;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.lbl.city{font-size:40px;font-weight:800}
+.lbl.small{font-size:30px;font-weight:600;color:#cfe6ff}
+.lbl.sea{font-size:40px;font-weight:300;color:rgba(160,215,240,.85);letter-spacing:6px}
+.tag{position:absolute;transform:translate(-50%,-100%);white-space:nowrap;background:linear-gradient(180deg,var(--gold1),var(--gold2));color:var(--deep);
+  font-weight:900;font-size:42px;padding:12px 30px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.tag:after{content:"";position:absolute;bottom:-16px;left:50%;margin-left:-16px;border:16px solid transparent;border-bottom:0;border-top-color:var(--gold2)}
+.card{background:rgba(6,18,42,.82);border:1.5px solid rgba(246,220,150,.45);border-radius:28px;backdrop-filter:blur(6px)}
+.stats{display:flex;gap:18px;justify-content:space-between}
+.stat{flex:1;text-align:center;padding:22px 10px}
+.stat b{display:block;font-size:58px;font-weight:900;line-height:1}
+.stat span{display:block;font-size:30px;font-weight:500;margin-top:8px;color:#dbe7f7}
+
+/* steps */
+.step{position:absolute;right:80px;left:80px;height:170px;display:flex;align-items:center;gap:36px}
+.dot{flex:0 0 96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:4px solid var(--gold2);background:var(--deep);position:relative;z-index:2}
+.dot svg{width:54px;height:54px}
+.dot.pending{border-style:dashed;border-color:rgba(246,220,150,.8)}
+.stxt b{display:block;font-size:52px;font-weight:800;line-height:1.1}
+.stxt span{display:block;font-size:38px;font-weight:500;color:#d6e2f2;margin-top:4px}
+.stxt span.hl{color:var(--gold1);font-weight:800}
+.ring{position:absolute;inset:-4px;border-radius:50%;border:4px solid var(--gold1)}
+
+/* chart */
+.axis-lbl{position:absolute;font-size:28px;font-weight:600;color:#c9d7ea;transform:translateX(-50%);text-align:center;white-space:nowrap;line-height:1.15}
+.pill{position:absolute;white-space:nowrap;font-weight:800;font-size:36px;padding:10px 24px;border-radius:14px}
+
+/* bars */
+.bar-wrap{position:absolute;bottom:0;width:300px;transform:translateX(-50%)}
+.bar{position:absolute;bottom:0;left:0;right:0;border-radius:22px 22px 0 0}
+.bar-val{position:absolute;left:-60px;right:-60px;text-align:center;font-weight:900;white-space:nowrap}
+.bar-cap{position:absolute;left:-90px;right:-90px;top:100%;margin-top:18px;text-align:center;font-size:34px;font-weight:700;color:#dbe7f7;line-height:1.2}
+
+/* cta */
+.btn{display:inline-flex;align-items:center;gap:22px;padding:34px 70px;border-radius:999px;
+  background:linear-gradient(180deg,var(--gold1),var(--gold2) 60%,var(--gold3));color:var(--deep);font-weight:900;font-size:62px;box-shadow:0 18px 50px rgba(212,167,82,.45),inset 0 2px 0 rgba(255,255,255,.6)}
+.btn .arr{width:64px;height:64px;border-radius:50%;background:var(--deep);display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- S1 HOOK -->
+  <section class="scene" id="s1">
+    <div class="bg" id="s1bg" style="background-image:url(img/aerial.jpg);inset:auto;top:-20px;left:-60px;right:-60px;height:1000px;transform-origin:50% 40%;-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent 98%)"></div>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(6,18,42,.25) 0%,rgba(6,18,42,0) 22%,rgba(6,18,42,.2) 45%,rgba(6,18,42,.92) 64%,rgba(6,18,42,1) 100%)"></div>
+    <div class="abs title" style="top:760px">
+      <div class="kicker" id="s1k"><i></i>רובע הים · חדרה</div>
+    </div>
+    <div class="abs title h1" id="s1h1" style="top:870px">התכנית מתקדמת.</div>
+    <div class="abs title h1" id="s1h2" style="top:1000px"><span class="gold">המחיר עדיין לא.</span></div>
+    <div class="abs title body" id="s1sub" style="top:1160px;color:#e6eefb">קרקע להשקעה בשכונה חדשה על קו החוף</div>
+  </section>
+
+  <!-- S2 MAP -->
+  <section class="scene" id="s2">
+    <svg id="mapsvg" viewBox="0 0 1080 1440" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="seaG" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#0d4f86"/><stop offset="1" stop-color="#1673b0"/>
+        </linearGradient>
+        <linearGradient id="landG" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#0d1d3a"/><stop offset="1" stop-color="#091630"/>
+        </linearGradient>
+        <radialGradient id="zoneGlow"><stop offset="0" stop-color="#f6dc96" stop-opacity=".55"/><stop offset="1" stop-color="#f6dc96" stop-opacity="0"/></radialGradient>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <rect width="1080" height="1440" fill="url(#seaG)"/>
+      <g id="cam">
+        <path id="land" fill="url(#landG)"/>
+        <path id="res" fill="#1a3260" opacity=".95"/>
+        <path id="rd_primary" fill="none" stroke="#ffffff" stroke-opacity=".16" stroke-width="2" vector-effect="non-scaling-stroke"/>
+        <path id="rd_trunk" fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="3" vector-effect="non-scaling-stroke"/>
+        <path id="rd_motorway" fill="none" stroke="#9fc4ff" stroke-opacity=".45" stroke-width="4" vector-effect="non-scaling-stroke"/>
+        <path id="rivers" fill="none" stroke="#5cc3e6" stroke-opacity=".85" stroke-width="3.5" vector-effect="non-scaling-stroke"/>
+        <path id="coastGlow" fill="none" stroke="#f6dc96" stroke-width="10" stroke-opacity=".25" vector-effect="non-scaling-stroke" pathLength="1" filter="url(#glow)"/>
+        <path id="coast" fill="none" stroke="#f6dc96" stroke-width="4" vector-effect="non-scaling-stroke" pathLength="1"/>
+        <circle id="zglow" r="60" fill="url(#zoneGlow)"/>
+        <path id="zone" fill="#f6dc96" fill-opacity=".38" stroke="#f6dc96" stroke-width="4" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+      </g>
+      <g id="rings"></g>
+    </svg>
+    <div id="maplabels"></div>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(6,18,42,.92) 0%,rgba(6,18,42,0) 24%,rgba(6,18,42,0) 70%,rgba(6,18,42,.9) 100%)"></div>
+    <div class="abs title" style="top:150px">
+      <div class="h2" id="s2t1">על קו החוף של חדרה</div>
+      <div class="body" id="s2t2" style="margin-top:14px;color:#dce8f8">בין נחל חדרה לגבעת אולגה, כ-300 מ׳ מהים</div>
+    </div>
+    <div class="abs card stats" id="s2stats" style="left:60px;right:60px;top:1150px">
+      <div class="stat"><b class="gold" id="st1">10,000</b><span>יח״ד מתוכננות</span></div>
+      <div class="stat"><b class="gold" id="st2">1,400</b><span>חדרי מלון</span></div>
+      <div class="stat"><b class="gold" id="st3">1,200</b><span>דונם פארקים וטיילת</span></div>
+    </div>
+  </section>
+
+  <!-- S3 PROGRESS -->
+  <section class="scene" id="s3">
+    <div class="bg" id="s3bg" style="background-image:url(img/aerial.jpg);filter:blur(3px) saturate(.9)"></div>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(6,18,42,.93),rgba(6,18,42,.86) 50%,rgba(6,18,42,.95))"></div>
+    <div class="abs title" style="top:170px">
+      <div class="h2" id="s3t">הפרויקט <span class="gold">מתקדם</span></div>
+      <div class="rule" id="s3r" style="width:360px;margin-top:22px;margin-right:0"></div>
+    </div>
+    <svg class="abs" style="top:0;left:0" width="1080" height="1440">
+      <line id="s3line" x1="952" x2="952" y1="460" y2="1150" stroke="#d4a752" stroke-width="4" stroke-dasharray="690" stroke-dashoffset="690"/>
+    </svg>
+    <div class="step" id="st_a" style="top:395px"><div class="dot"><svg viewBox="0 0 24 24"><path class="ck" d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#f6dc96" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg></div>
+      <div class="stxt"><b>תכנית המתאר חד/2020</b><span>אושרה</span></div></div>
+    <div class="step" id="st_b" style="top:625px"><div class="dot"><svg viewBox="0 0 24 24"><path class="ck" d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#f6dc96" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg></div>
+      <div class="stxt"><b>התכנית המפורטת</b><span>הופקדה בוועדה המחוזית</span></div></div>
+    <div class="step" id="st_c" style="top:855px"><div class="dot" style="background:linear-gradient(180deg,#f6dc96,#d4a752)"><svg viewBox="0 0 24 24"><path class="ck" d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#06122a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg><div class="ring" id="c_ring"></div></div>
+      <div class="stxt"><b class="gold">הזכויות גדלו משמעותית</b><span>יותר בנייה על אותה קרקע</span></div></div>
+    <div class="step" id="st_d" style="top:1085px"><div class="dot pending"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2" fill="#f6dc96"/></svg></div>
+      <div class="stxt"><b>אישור סופי</b><span>השלב הבא</span></div></div>
+  </section>
+
+  <!-- S4 CHART -->
+  <section class="scene" id="s4">
+    <div class="shade" style="background:radial-gradient(120% 80% at 50% 40%,#11295a 0%,#081833 55%,#050f24 100%)"></div>
+    <div class="abs title" style="top:150px">
+      <div class="h2" id="s4t1">הזכויות <span class="gold">גדלו.</span></div>
+      <div class="h2" id="s4t2">המחיר <span style="color:#fff">נשאר.</span></div>
+    </div>
+    <svg class="abs" id="chart" style="top:0;left:0" width="1080" height="1440">
+      <defs>
+        <linearGradient id="gapG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6dc96" stop-opacity=".42"/><stop offset="1" stop-color="#f6dc96" stop-opacity=".06"/></linearGradient>
+        <clipPath id="gapClip"><rect id="gapRect" x="1000" y="0" width="0" height="1440"/></clipPath>
+      </defs>
+      <g stroke="#ffffff" stroke-opacity=".09" stroke-width="2">
+        <line x1="100" x2="980" y1="560" y2="560"/><line x1="100" x2="980" y1="700" y2="700"/><line x1="100" x2="980" y1="840" y2="840"/><line x1="100" x2="980" y1="980" y2="980"/>
+      </g>
+      <line x1="100" x2="980" y1="1110" y2="1110" stroke="#ffffff" stroke-opacity=".35" stroke-width="3"/>
+      <path id="gap" clip-path="url(#gapClip)" fill="url(#gapG)" d=""/>
+      <path id="valLine" fill="none" stroke="#f6dc96" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" filter="url(#glow2)"/>
+      <path id="priceLine" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+      <g id="valDots"></g>
+      <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </svg>
+    <div id="axis"></div>
+    <div class="pill" id="pVal" style="background:linear-gradient(180deg,#f6dc96,#d4a752);color:#06122a">שווי הזכויות בקרקע</div>
+    <div class="pill" id="pPrice" style="background:#fff;color:#06122a">המחיר: 399,000 ₪</div>
+    <div class="abs" id="gapLbl" style="font-weight:900;font-size:44px;text-align:center;line-height:1.12;color:#fff;background:rgba(6,18,42,.88);border:2px solid rgba(246,220,150,.6);border-radius:20px;padding:14px 30px">הפער הזה<br><span class="gold">הוא ההזדמנות</span></div>
+    <div class="abs" id="s4note" style="bottom:86px;right:80px;left:80px;text-align:center;font-size:24px;color:rgba(255,255,255,.55)">*המחשה גרפית של המגמה, לא בקנה מידה</div>
+  </section>
+
+  <!-- S5 PRICE -->
+  <section class="scene" id="s5">
+    <div class="bg" id="s5bg" style="background-image:url(img/hero.jpg)"></div>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(6,18,42,.86) 0%,rgba(6,18,42,.62) 40%,rgba(6,18,42,.9) 80%)"></div>
+    <div class="abs title" style="top:150px;text-align:center;right:60px;left:60px">
+      <div class="body" id="s5k" style="font-weight:700;color:#e6eefb">ועדיין במחירים של לפני שנה</div>
+      <div id="s5p" style="font-weight:900;font-size:190px;line-height:1.05;margin-top:6px;direction:rtl"><span class="gold" id="s5num">399,000</span><span class="gold" style="font-size:120px"> ₪</span></div>
+      <div class="body" id="s5u" style="font-weight:700;font-size:54px">ל-100 מ״ר קרקע</div>
+    </div>
+    <div class="abs" id="bars" style="left:0;right:0;top:640px;height:500px">
+      <div class="bar-wrap" style="left:700px;height:500px" id="bw1">
+        <div class="bar" id="b1" style="background:linear-gradient(180deg,#ffffff,#c9d6ea);height:0"></div>
+        <div class="bar-val" id="b1v" style="font-size:54px;color:#fff">399 אלף ₪</div>
+        <div class="bar-cap">המחיר היום</div>
+      </div>
+      <div class="bar-wrap" style="left:330px;height:500px" id="bw2">
+        <div class="bar" id="b2" style="background:linear-gradient(180deg,#f6dc96,#d4a752 60%,#a8782c);height:0"></div>
+        <div class="bar-val" id="b2v" style="font-size:54px"><span class="gold">כ-1.4 מיליון ₪</span></div>
+        <div class="bar-cap">עם אישור התכנית*</div>
+      </div>
+    </div>
+    <div class="abs" id="s5note" style="bottom:80px;right:80px;left:80px;text-align:center;font-size:24px;color:rgba(255,255,255,.62)">*לפי הערכת שמאי. אין בכך התחייבות לשווי או לתשואה עתידיים</div>
+  </section>
+
+  <!-- S6 CTA -->
+  <section class="scene" id="s6">
+    <div class="bg" id="s6bg" style="background-image:url(img/waves.jpg)"></div>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(6,18,42,.35) 0%,rgba(6,18,42,.7) 35%,rgba(6,18,42,.9) 75%)"></div>
+    <img class="abs" id="s6logo" src="img/logo.png" style="width:330px;left:375px;top:170px;filter:brightness(0) invert(1)">
+    <div class="abs" style="top:520px;right:60px;left:60px;text-align:center">
+      <div class="h2" id="s6t1" style="font-size:92px">זה הזמן להיכנס</div>
+      <div class="rule" id="s6r" style="width:300px;margin:26px auto 26px;transform-origin:center"></div>
+      <div class="body" id="s6t2" style="font-size:50px;font-weight:600;color:#eaf1fb;line-height:1.35">השאירו פרטים ונשלח לכם<br>את <span class="gold" style="font-weight:800">כל המידע על העסקה</span></div>
+    </div>
+    <div class="abs" id="s6btnw" style="top:1010px;left:0;right:0;text-align:center">
+      <div class="btn" id="s6btn">השאירו פרטים<span class="arr"><svg width="34" height="34" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#f6dc96" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </div>
+    <svg class="abs" id="hand" width="120" height="120" viewBox="0 0 24 24" style="top:1120px;left:250px">
+      <path d="M9 11V5.5a1.5 1.5 0 013 0V10m0 0V8.5a1.5 1.5 0 013 0V11m0-1a1.5 1.5 0 013 0v4.5c0 3.6-2.6 6.5-6 6.5h-1.3c-1.9 0-3.4-1-4.4-2.5L3.6 14.2a1.6 1.6 0 012.6-1.8L9 15" fill="#ffffff" stroke="#06122a" stroke-width="1.2" stroke-linejoin="round"/>
+    </svg>
+    <div class="abs" id="s6sub" style="top:1220px;left:0;right:0;text-align:center;font-size:36px;font-weight:500;color:#cfdcef">נציג צמרות יחזור אליכם בהקדם</div>
+  </section>
+
+  <div id="wipe"></div>
+  <img id="logo" src="img/logo.png">
+  <div id="legal">*הקרקע אינה זמינה לבנייה</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const lin=(t,a,d)=>clamp((t-a)/d);
+const eo=x=>1-Math.pow(1-x,3);            // easeOutCubic
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eback=x=>{const c1=1.5,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const mix=(a,b,p)=>a+(b-a)*p;
+
+// timeline (seconds)
+const S={s1:[0,6.2],s2:[6.2,14.2],s3:[14.2,21.2],s4:[21.2,28.4],s5:[28.4,35.0],s6:[35.0,42.0]};
+const DUR=42.0, XF=0.7;
+
+function rise(el,t,a,d=0.8,dy=40){ // fade+slide up
+  const p=eo(lin(t,a,d)); el.style.opacity=p; el.style.transform=`translateY(${(1-p)*dy}px)`; el.style.filter=p<1?`blur(${(1-p)*8}px)`:'none';
+}
+function fadeOut(el,t,a,d=0.5){ const p=lin(t,a,d); if(p>0){el.style.opacity=Math.min(+el.style.opacity||1,1-p);} }
+
+// split words for word-by-word reveal
+function splitWords(el){
+  const walk=(node)=>{
+    [...node.childNodes].forEach(n=>{
+      if(n.nodeType===3){
+        const frag=document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(w=>{ if(!w) return;
+          if(/^\s+$/.test(w)){frag.appendChild(document.createTextNode(w));return;}
+          const s=document.createElement('span'); s.className='w'; s.textContent=w; frag.appendChild(s);});
+        n.replaceWith(frag);
+      } else if(n.nodeType===1 && !n.classList.contains('gold')) walk(n);
+      else if(n.nodeType===1){ // gold span: split inside but keep gold on each word
+        const words=n.textContent.split(/(\s+)/); n.textContent='';
+        words.forEach(w=>{ if(!w) return; if(/^\s+$/.test(w)){n.appendChild(document.createTextNode(w));return;}
+          const s=document.createElement('span'); s.className='w gold'; s.textContent=w; n.appendChild(s);});
+        n.classList.remove('gold');
+      }
+    });
+  };
+  walk(el); return [...el.querySelectorAll('.w')];
+}
+function words(ws,t,a,step=0.16,d=0.6){
+  ws.forEach((w,i)=>{const p=eo(lin(t,a+i*step,d)); w.style.opacity=p; w.style.transform=`translateY(${(1-p)*36}px)`; w.style.filter=p<1?`blur(${(1-p)*6}px)`:'none';});
+}
+
+const W1=splitWords($('s1h1')), W2=splitWords($('s1h2')), W4a=splitWords($('s4t1')), W4b=splitWords($('s4t2')), W6=splitWords($('s6t1')), W3=splitWords($('s3t'));
+
+// ---------- MAP setup ----------
+const M=window.MAP;
+$('land').setAttribute('d',M.land); $('coast').setAttribute('d',M.coast); $('coastGlow').setAttribute('d',M.coast);
+$('res').setAttribute('d',M.res); $('rivers').setAttribute('d',M.rivers);
+['primary','trunk','motorway'].forEach(k=>$('rd_'+k).setAttribute('d',M.roads[k]));
+$('zone').setAttribute('d',M.zone);
+const ZC=M.places.zone; $('zglow').setAttribute('cx',ZC[0]); $('zglow').setAttribute('cy',ZC[1]);
+const labels=[
+  {k:'hadera',txt:'חדרה',cls:'city',show:[1.2,99],dx:0,dy:0},
+  {k:'caesarea',txt:'קיסריה',cls:'city',show:[1.4,3.6]},
+  {k:'nahal',txt:'נחל חדרה',cls:'small',show:[3.9,99],dx:-10,dy:-46},
+  {k:'olga',txt:'גבעת אולגה',cls:'small',show:[4.1,5.4],dx:-40,dy:-30},
+];
+const LBL=labels.map(l=>{const d=document.createElement('div'); d.className='lbl '+l.cls; d.textContent=l.txt; $('maplabels').appendChild(d); return {...l,el:d};});
+const seaL=document.createElement('div'); seaL.className='lbl sea'; seaL.textContent='הים התיכון'; $('maplabels').appendChild(seaL);
+const tag=document.createElement('div'); tag.className='tag'; tag.textContent='רובע הים'; $('maplabels').appendChild(tag);
+const RINGS=[0,1,2].map(()=>{const c=document.createElementNS('http://www.w3.org/2000/svg','circle'); c.setAttribute('fill','none'); c.setAttribute('stroke','#f6dc96'); c.setAttribute('stroke-width','4'); $('rings').appendChild(c); return c;});
+
+function camAt(lt){
+  // wide view -> zoom on zone
+  const wide={cx:1150,cy:1950,s:0.55}, close={cx:ZC[0]+35,cy:ZC[1]-40,s:2.6};
+  const p=eio(lin(lt,2.6,2.6));
+  // interpolate scale geometrically
+  const s=wide.s*Math.pow(close.s/wide.s,p);
+  return {cx:mix(wide.cx,close.cx,p),cy:mix(wide.cy,close.cy,p),s, p};
+}
+function toScreen(c,x,y){return [540+(x-c.cx)*c.s, 720+(y-c.cy)*c.s];}
+
+// ---------- CHART setup ----------
+const CX=[180,410,640,890]; // time flows left -> right
+const valY=[1000,860,620,600], priceY=1000;
+const axisTxt=['תכנית מתאר<br>אושרה','תכנית מפורטת<br>הופקדה','הזכויות<br>גדלו','היום'];
+const AX=axisTxt.map((t,i)=>{const d=document.createElement('div'); d.className='axis-lbl'; d.innerHTML=t; d.style.left=CX[i]+'px'; d.style.top='1130px'; if(i==3){d.style.color='#f6dc96';d.style.fontWeight='800';d.style.fontSize='34px'} $('axis').appendChild(d); return d;});
+// value path: smooth steps
+let vp=`M100,${valY[0]} L${CX[0]},${valY[0]}`;
+for(let i=1;i<4;i++){ const xm=(CX[i-1]+CX[i])/2; vp+=` C${xm},${valY[i-1]} ${xm},${valY[i]} ${CX[i]},${valY[i]}`; }
+vp+=` L980,${valY[3]-10}`;
+$('valLine').setAttribute('d',vp);
+$('priceLine').setAttribute('d',`M100,${priceY} L980,${priceY}`);
+$('gap').setAttribute('d',vp+` L980,${priceY} L100,${priceY} Z`);
+const VD=[0,1,2,3].map(i=>{const g=document.createElementNS('http://www.w3.org/2000/svg','circle'); g.setAttribute('cx',CX[i]); g.setAttribute('cy',valY[i]); g.setAttribute('r',16); g.setAttribute('fill','#06122a'); g.setAttribute('stroke','#f6dc96'); g.setAttribute('stroke-width','6'); $('valDots').appendChild(g); return g;});
+
+function fmt(n){return Math.round(n).toLocaleString('en-US');}
+
+// ---------- RENDER ----------
+function sceneAlpha(t,[a,b],first,last){
+  const i= first?1:eo(lin(t,a-XF/2,XF)); const o= last?1:1-lin(t,b-XF/2,XF); return Math.min(i,o);
+}
+function seek(t){
+  const keys=Object.keys(S);
+  keys.forEach((k,i)=>{ const al=sceneAlpha(t,S[k],i==0,i==keys.length-1); const el=$(k); el.style.opacity=al; el.style.visibility=al>0.001?'visible':'hidden'; });
+  // wipe sweep on each transition
+  let wipeOp=0, wipeX=0;
+  keys.slice(1).forEach(k=>{const a=S[k][0]; const p=lin(t,a-0.55,1.1); if(p>0&&p<1){wipeOp=Math.sin(p*Math.PI)*.9; wipeX=mix(1150,-270,eio(p));}});
+  $('wipe').style.opacity=0; $('wipe').style.left=wipeX+'px';
+  $('logo').style.opacity = t>S.s6[0]-0.3 ? 1-lin(t,S.s6[0]-0.3,0.5) : eo(lin(t,0.3,0.8))*.95;
+
+  // S1
+  {const lt=t-S.s1[0];
+    $('s1bg').style.transform=`scale(${mix(1.18,1.04,eo(lin(lt,0,6.8)))}) translateX(${mix(-30,20,lin(lt,0,6.8))}px)`;
+    rise($('s1k'),lt,0.4,0.7);
+    words(W1,lt,0.9,0.22,0.7);
+    words(W2,lt,2.2,0.24,0.7);
+    rise($('s1sub'),lt,3.4,0.8);
+  }
+  // S2 map
+  {const lt=t-S.s2[0];
+    rise($('s2t1'),lt,0.2,0.7); rise($('s2t2'),lt,0.6,0.7);
+    const c=camAt(lt);
+    $('cam').setAttribute('transform',`translate(540,720) scale(${c.s}) translate(${-c.cx},${-c.cy})`);
+    const cd=eio(lin(lt,0.1,2.4)); const da=cd>=1?'none':'1'; ['coast','coastGlow'].forEach(id=>{$(id).setAttribute('stroke-dasharray',da); $(id).style.strokeDashoffset=1-cd;});
+    LBL.forEach(l=>{const [x,y]=toScreen(c,...M.places[l.k]); const a=eo(lin(lt,l.show[0],.5))*(1-lin(lt,l.show[1],.4));
+      l.el.style.left=(x+(l.dx||0))+'px'; l.el.style.top=(y+(l.dy||0))+'px'; l.el.style.opacity=a;});
+    {const [x,y]=toScreen(c,640,2000); seaL.style.left=Math.min(x,250)+'px'; seaL.style.top='880px'; seaL.style.opacity=eo(lin(lt,1.0,.8))*.9;}
+    const zp=eo(lin(lt,4.6,0.6)); $('zone').style.opacity=zp; $('zglow').style.opacity=zp; $('zglow').setAttribute('r',60+20*Math.sin(lt*3));
+    const [zx,zy]=toScreen(c,ZC[0],ZC[1]);
+    RINGS.forEach((r,i)=>{const ph=((((lt-4.8)/1.6+i/3)%1)+1)%1; const on=lt>4.8; r.setAttribute('cx',zx); r.setAttribute('cy',zy); r.setAttribute('r',40+ph*190); r.setAttribute('stroke-opacity',on?(1-ph)*.7:0);});
+    const tp=eback(lin(lt,5.0,0.6)); tag.style.left=zx+'px'; tag.style.top=(zy-90-(1-tp)*40)+'px'; tag.style.opacity=lin(lt,5.0,0.3); tag.style.transform=`translate(-50%,-100%) scale(${0.6+0.4*tp})`;
+    rise($('s2stats'),lt,5.6,0.7,60);
+    const sp=eo(lin(lt,5.7,1.3)); $('st1').textContent=fmt(10000*sp); $('st2').textContent=fmt(1400*sp); $('st3').textContent=fmt(1200*sp);
+  }
+  // S3 progress
+  {const lt=t-S.s3[0];
+    $('s3bg').style.transform=`scale(${mix(1.25,1.12,lin(lt,0,7))})`;
+    words(W3,lt,0.2,0.18,0.6);
+    $('s3r').style.transform=`scaleX(${eo(lin(lt,0.6,0.7))})`;
+    $('s3line').style.strokeDashoffset=690*(1-eio(lin(lt,0.9,4.0)));
+    const starts=[1.0,2.1,3.2,4.5];
+    ['st_a','st_b','st_c','st_d'].forEach((id,i)=>{const el=$(id); rise(el,lt,starts[i],0.7,30);
+      const ck=el.querySelector('.ck'); if(ck) ck.style.strokeDashoffset=1-eo(lin(lt,starts[i]+0.35,0.5));});
+    const rp=lin(lt,3.7,1.2); const ring=$('c_ring'); ring.style.opacity=rp>0&&rp<1?(1-rp):0; ring.style.transform=`scale(${1+rp*0.7})`;
+    const pend=$('st_d').querySelector('.dot'); pend.style.transform=`scale(${1+0.06*Math.sin(lt*5)})`;
+  }
+  // S4 chart
+  {const lt=t-S.s4[0];
+    words(W4a,lt,0.2,0.2,0.6); words(W4b,lt,1.0,0.2,0.6);
+    const lp=eio(lin(lt,1.3,1.8)); $('priceLine').style.strokeDashoffset=1-lp;
+    const vpp=eio(lin(lt,1.6,2.6)); $('valLine').style.strokeDashoffset=1-vpp;
+    VD.forEach((d,i)=>{const p=eback(lin(lt,1.7+i*0.62,0.4)); d.setAttribute('r',16*p); d.style.opacity=p>0?1:0;});
+    AX.forEach((a,i)=>{const p=eo(lin(lt,1.6+i*0.62,0.5)); a.style.opacity=p; a.style.transform=`translateX(-50%) translateY(${(1-p)*14}px)`;});
+    $('gapRect').setAttribute('x',100); $('gapRect').setAttribute('width',mix(0,880,eio(lin(lt,1.6,2.6))));
+    const pv=$('pVal'); pv.style.right='70px'; pv.style.top='500px'; rise(pv,lt,4.0,0.6,20);
+    const pp=$('pPrice'); pp.style.left='100px'; pp.style.top='1020px'; rise(pp,lt,1.9,0.6,20);
+    const gl=$('gapLbl'); gl.style.left='560px'; gl.style.top='760px'; rise(gl,lt,4.6,0.7,24);
+    rise($('s4note'),lt,2.0,0.6,0);
+  }
+  // S5 price
+  {const lt=t-S.s5[0];
+    $('s5bg').style.transform=`scale(${mix(1.05,1.15,lin(lt,0,7))})`;
+    rise($('s5k'),lt,0.2,0.6);
+    rise($('s5p'),lt,0.5,0.6,30); $('s5num').textContent=fmt(399000*eo(lin(lt,0.5,1.3)));
+    rise($('s5u'),lt,1.2,0.6);
+    const h1=500*399/1400, h2=500;
+    const b1=eo(lin(lt,2.2,0.9)), b2=eo(lin(lt,2.9,1.4));
+    $('b1').style.height=(h1*b1)+'px'; $('b2').style.height=(h2*b2)+'px';
+    $('b1v').style.bottom=(h1*b1+16)+'px'; $('b1v').style.opacity=lin(lt,2.6,.4);
+    $('b2v').style.bottom=(h2*b2+16)+'px'; $('b2v').style.opacity=lin(lt,3.8,.5);
+    $('bw1').style.opacity=lin(lt,2.0,.4); $('bw2').style.opacity=lin(lt,2.7,.4);
+    rise($('s5note'),lt,3.6,0.6,0);
+  }
+  // S6 CTA
+  {const lt=t-S.s6[0];
+    $('s6bg').style.transform=`scale(${mix(1.12,1.0,eo(lin(lt,0,7)))})`;
+    const lp=eo(lin(lt,0.2,0.8)); $('s6logo').style.opacity=lp; $('s6logo').style.transform=`scale(${0.85+0.15*lp})`;
+    words(W6,lt,0.7,0.2,0.6);
+    $('s6r').style.transform=`scaleX(${eo(lin(lt,1.3,0.6))})`;
+    rise($('s6t2'),lt,1.7,0.8);
+    const bp=eback(lin(lt,2.8,0.6)); const btn=$('s6btnw'); btn.style.opacity=lin(lt,2.8,.3);
+    const pulse=lt>3.6?1+0.035*Math.sin((lt-3.6)*Math.PI*1.6):1;
+    btn.style.transform=`scale(${(0.7+0.3*bp)*pulse})`;
+    const hp=lin(lt,3.6,0.6); const hand=$('hand'); const tap=lt>4.2?Math.abs(Math.sin((lt-4.2)*Math.PI*0.8)):0;
+    hand.style.opacity=hp; hand.style.transform=`translate(${(1-eo(hp))*80}px,${(1-eo(hp))*80 - tap*0}px) scale(${1-tap*0.12})`;
+    rise($('s6sub'),lt,3.4,0.6);
+  }
+
+}
+window.seek=seek; window.DUR=DUR;
+seek(0);
+</script>
+</body>
+</html>
