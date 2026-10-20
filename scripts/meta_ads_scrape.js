@@ -44,9 +44,9 @@ function parseStarted(s) {
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
   });
   const page = await ctx.newPage();
-  // Meta מאט טעינות אנונימיות רצופות — עד 4 ניסיונות עם המתנה הולכת וגדלה
-  for (let attempt = 0; attempt < 4; attempt++) {
-    if (attempt) await page.waitForTimeout(15000 * attempt);
+  // בפייסבוק עובדים לאט: לכל היותר טעינה אחת לחצי דקה, גם בניסיון חוזר
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt) await page.waitForTimeout(30000 * attempt);
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
     // מחכים לכרטיס הראשון (או להודעה שאין מודעות)
     const ok = await page.waitForFunction(() => /מזהה ספרייה:|אין מודעות שמתאימות/.test(document.body.innerText),

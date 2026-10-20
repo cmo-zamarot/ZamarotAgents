@@ -9,8 +9,10 @@
 4. לכל מודעה חדשה: files.upload לצילום → intel.create (kind competitor_ad).
 5. כותב סיכום ל־state/last_run.json. את ההודעה ל־#Sales כותבת ג׳ני על בסיס הסיכום.
 """
-import argparse, json, os, re, subprocess, sys, datetime
+import argparse, json, os, re, subprocess, sys, datetime, time
 from pathlib import Path
+
+FB_GAP_SECONDS = 35
 
 ROOT = Path(__file__).resolve().parent.parent
 ZAMERET = ROOT / "scripts" / "zameret.sh"
@@ -50,7 +52,7 @@ def upload(path):
 
 def scrape(page_id, out_dir, max_n):
     r = subprocess.run(["node", str(SCRAPER), "page", page_id, str(out_dir), str(max_n)],
-                       capture_output=True, text=True, timeout=300)
+                       capture_output=True, text=True, timeout=400)
     if r.returncode != 0:
         print(f"scrape failed for {page_id}: {r.stderr[-500:]}", file=sys.stderr)
         return []
@@ -114,10 +116,14 @@ def main():
     known = {i.get("source_url") for i in api({"action": "intel.list", "kind": "competitor_ad", "limit": 1000}).get("items", [])}
 
     created, skipped, errors = [], 0, []
+    first = True
     for c in competitors:
         pid = c.get("meta_page_id")
         if not pid:
             continue
+        if not first:  # בפייסבוק: לכל היותר חיפוש אחד לחצי דקה
+            time.sleep(FB_GAP_SECONDS)
+        first = False
         ads = scrape(pid, work / pid, args.max_per_page)
         for ad in ads:
             if ad["source_url"] in known:
