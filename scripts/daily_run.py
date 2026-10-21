@@ -121,14 +121,27 @@ def main():
     work.mkdir(parents=True, exist_ok=True)
 
     TRANSLATIONS.update(load_translations())
-    competitors = json.loads((STATE / "competitors.json").read_text())
-    existing = {c["name"] for c in api({"action": "competitors.list"}).get("competitors", [])}
-    for c in competitors:
-        if c["name"] not in existing and not args.dry_run:
-            api({"action": "competitors.upsert", "name": c["name"],
-                 "description": c.get("page_name") or "",
-                 "notes": c.get("notes") or (f"Meta page id: {c['meta_page_id']}" if c.get("meta_page_id") else ""),
-                 "tags": ["נדל״ן", "קרקעות"]})
+    # מקור האמת: רשימת המתחרים במעקב בצמרת. מי שיש לו ad_library_url עם view_all_page_id נסרק.
+    # state/competitors.json משלים מתחרים שעוד לא קיבלו קישור בצמרת.
+    remote = api({"action": "competitors.list"}).get("competitors", [])
+    competitors, seen_pids = [], set()
+    for c in remote:
+        m = re.search(r"view_all_page_id=(\d+)", c.get("ad_library_url") or "")
+        if m and m.group(1) not in seen_pids:
+            seen_pids.add(m.group(1))
+            competitors.append({"name": c["name"], "meta_page_id": m.group(1)})
+    remote_names = {c["name"] for c in remote}
+    for c in json.loads((STATE / "competitors.json").read_text()):
+        pid = c.get("meta_page_id")
+        if pid and pid in seen_pids:
+            continue
+        if pid:
+            seen_pids.add(pid)
+            competitors.append(c)
+        if c["name"] not in remote_names and not args.dry_run:
+            api({"action": "competitors.upsert", "name": c["name"], "description": c.get("page_name") or "",
+                 "notes": c.get("notes") or "", "tags": ["נדל״ן", "קרקעות"],
+                 **({"ad_library_url": f"https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IL&view_all_page_id={pid}"} if pid else {})})
 
     known = {i.get("source_url") for i in api({"action": "intel.list", "kind": "competitor_ad", "limit": 1000}).get("items", [])}
 
