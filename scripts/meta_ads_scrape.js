@@ -4,7 +4,7 @@
 //   node scripts/meta_ads_scrape.js page <page_id> <out_dir> [max]
 //   node scripts/meta_ads_scrape.js q "<מילות חיפוש>" <out_dir> [max]
 // פלט: <out_dir>/<library_id>.png לכל מודעה + JSON ל־stdout:
-//   [{ library_id, source_url, started, page_name, text, link_caption, shot }]
+//   [{ library_id, source_url, started, page_name, page_url, page_id, text, shot }]
 // הערה: קישור ישיר למודעה בודדת (?id=) לא מציג כלום בלי התחברות — לכן טוענים את עמוד המפרסם / החיפוש.
 const path = require('path');
 const fs = require('fs');
@@ -93,6 +93,10 @@ function parseStarted(s) {
     const sIdx = lines.findIndex((l) => l === 'ממומן');
     const pageName = sIdx > 0 ? lines[sIdx - 1] : null;
     const body = sIdx >= 0 ? lines.slice(sIdx + 1).filter((l) => !/^(לפרטים|הרשמה|שליחת הודעה|למידע נוסף|FB\.ME|.*\.(COM|CO\.IL|ME))$/i.test(l)).join('\n') : '';
+    // קישור לעמוד המפרסם (בדרך כלל facebook.com/<page_id>/) — לזיהוי page id של מפרסם חדש
+    const pageUrl = await card.locator('a[href*="facebook.com/"]').evaluateAll((as) =>
+      (as.map((a) => a.href).find((h) => /facebook\.com\/(\d+|[^/?]+)\/?(\?|$)/.test(h) && !/ads\/library|l\.facebook/.test(h)) || null)).catch(() => null);
+    const pageId = (pageUrl && (pageUrl.match(/facebook\.com\/(\d{6,})/) || [])[1]) || null;
     const shot = path.join(outDir, `${id}.png`);
     await card.scrollIntoViewIfNeeded().catch(() => {});
     await page.waitForTimeout(600);
@@ -102,6 +106,8 @@ function parseStarted(s) {
       source_url: `https://www.facebook.com/ads/library/?id=${id}`,
       started: parseStarted(startedRaw),
       page_name: pageName,
+      page_url: pageUrl,
+      page_id: pageId,
       text: body,
       shot: fs.existsSync(shot) ? shot : null,
     });
