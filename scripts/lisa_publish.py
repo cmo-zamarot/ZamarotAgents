@@ -41,7 +41,7 @@ def main(cards_path, shots):
     published = json.load(open(STATE)) if os.path.exists(STATE) else {}
     existing = {x.get("source_url") for x in call({"action": "intel.list", "audience": "marketing", "limit": 500}).get("items", [])}
     fields = ("kind", "title", "summary", "source_url", "source_name", "competitor_name", "location",
-              "price_info", "headlines", "messages", "tags", "platform", "running_since")
+              "price_info", "headlines", "messages", "tags", "platform", "running_since", "published_at")
     for c in cards:
         url = c["source_url"]
         if url in published or url in existing:

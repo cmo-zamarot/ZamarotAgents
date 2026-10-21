@@ -26,16 +26,17 @@
    - **Meta Ad Library** (`mcp__Meta_Ads__ads_library_search`, `ad_active_status: "ACTIVE"`). מ־IL: לפי `page_ids` שב־`state/competitors.md` ולפי מילות מפתח: "השקעה בקרקע", "קרקע להשקעה", "השבחה", "קרקע בטאבו", "ליווי עד מפתח", "זכות לדירה", "קבוצת רכישה", "וובינר נדל״ן". מ־US רק ביטויים ספציפיים: "land banking", "raw land investing", "land fund accredited investors", "real estate syndication", "build-to-rent fund". מכל מודעה חדשה פותחים את עמוד הנחיתה שלה.
    - **WebSearch:** כתבות ממומנות (ynet/ymag, גלובס sparticle, ביזפורטל bizpoint, כלכליסט, וואלה, מעריב), עמודי ravpage, וובינרים, סיורים ומגנטי לידים בישראל, ומשפכים של שחקנים רציניים בארה״ב (Walton, Fundrise, Arrived, CrowdStreet, Origin, DLP, משקיעי קרקע).
 6. **צילום:** `node scripts/screenshot.mjs research/lisa/<YYYY-MM-DD>/shots <url> ...`. לכל עמוד הסקריפט שומר מסך ראשון, עמוד מלא וטקסט. עמוד שהחזיר אימות אנושי או "רק רגע..." לא מעלים.
-7. **כרטיס לכל עמוד חדש:** קובץ `research/lisa/<YYYY-MM-DD>/cards_*.json` (מבנה למטה). קוראים את הטקסט ומסתכלים על שני הצילומים.
-8. **העלאה:** `lisa_publish.py` מעלה את הצילום הראשי ל־`image` ואת העמוד המלא ל־`media`, יוצר `intel.create` עם `audience: marketing`, ורושם ב־`state/lisa/published.json`.
-9. **אם נוסף משהו:** הודעה אחת ב־#Marketing דרך `chat.reply`. 2–4 שורות על הבולט, ועד 4 `links` (לעמוד ההשראה ולפריטים לפי `app_url`). `notify` רק אם דחוף באמת.
-10. **אם אין שום דבר חדש:** לא מעלים ולא כותבים לאף אחד.
-11. מעדכנים את `state/lisa/seen.json` (מזהי מודעות) ואת `state/competitors.md` (מפרסם חדש שחוזר בכמה מודעות), ואז commit ו־push לענף העבודה. צילומי `*.full.png` לא נכנסים לגיט.
+7. **תאריך פרסום (`published_at`)**: חובה כשבמקור מופיע תאריך (article:published_time, JSON-LD datePublished, byline). אין תאריך — לא שולחים את השדה. פריטים קיימים בלי תאריך משלימים ב־`intel.update`.
+8. **כרטיס לכל עמוד חדש:** קובץ `research/lisa/<YYYY-MM-DD>/cards_*.json` (מבנה למטה). קוראים את הטקסט ומסתכלים על שני הצילומים.
+9. **העלאה:** `lisa_publish.py` מעלה את הצילום הראשי ל־`image` ואת העמוד המלא ל־`media`, יוצר `intel.create` עם `audience: marketing`, ורושם ב־`state/lisa/published.json`.
+10. **אם נוסף משהו:** הודעה אחת ב־#Marketing דרך `chat.reply`. 2–4 שורות על הבולט, ועד 4 `links` (לעמוד ההשראה ולפריטים לפי `app_url`). `notify` רק אם דחוף באמת.
+11. **אם אין שום דבר חדש:** לא מעלים ולא כותבים לאף אחד.
+12. מעדכנים את `state/lisa/seen.json` (מזהי מודעות) ואת `state/competitors.md` (מפרסם חדש שחוזר בכמה מודעות), ואז commit ו־push לענף העבודה. צילומי `*.full.png` לא נכנסים לגיט.
 
 ## מבנה כרטיס (`intel.create`)
 ```json
 {"slug":"<שם הקובץ בלי סיומת>","kind":"landing_page|article|news|other","title":"<מי> — <מה> (עד 60 תווים)",
- "source_url":"https://...","source_name":"...","competitor_name":"...","location":"...","price_info":"כפי שמופיע",
+ "source_url":"https://...","source_name":"...","competitor_name":"...","location":"...","price_info":"כפי שמופיע","published_at":"YYYY-MM-DD",
  "headlines":["מילה במילה"],"messages":["3–6 מסרים"],"tags":["משפך","וובינר","כתבה ממומנת","ארה״ב"],
  "summary":"<p><b>מה זה:</b> …</p><p><b>מבנה המשפך:</b> …</p><p><b>מה לקחת מזה לצמרות:</b></p><ul><li>…</li></ul><p><b>לא להעתיק / זהירות בישראל:</b> …</p>"}
 ```
