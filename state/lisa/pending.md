@@ -7,3 +7,5 @@
   בולטים: Terra Nova Land (1390540347472970, וובינר שבועי "Oct 29 at 7 PM"), Signal Ventures (371185629416814, self-storage), Precision Global (1025289607554365), Lansing Capital (584060471449732), North Partners (1190964347441892), AcreTrader new-investor webinar.
 
 בריצה הבאה עם רשת: לפתוח את המודעות האלה, לצלם את עמודי הנחיתה, ורק אז להוסיף את המזהים ל־`seen.json` ולמחוק מכאן.
+
+## 2026-10-24 — עדיין חסום (facebook.com, ynet, google: 403). לא בוצעה סריקה נוספת; הממתינים מ־10-23 נשארים.
