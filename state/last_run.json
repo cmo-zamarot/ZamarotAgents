@@ -1,1885 +1,403 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "new": [
   {
-   "competitor": "ARIA נדל״ן וליווי בניה",
-   "title": "פספסתם את גליל ים? אל תפספסו את ההזדמנות הבאה בצפון הרצליה!",
-   "location": "הרצליה",
-   "price_info": "החל מ־670,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2493340904494267",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0125fe70f75e9415d094b"
-  },
-  {
-   "competitor": "ARIA נדל״ן וליווי בניה",
-   "title": "פספסתם את גליל ים? אל תפספסו את ההזדמנות הבאה בצפון הרצליה!",
-   "location": "הרצליה",
-   "price_info": "החל מ־670,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-31",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1207270471724496",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01262471c0d3cea9e05e3"
-  },
-  {
-   "competitor": "ARIA נדל״ן וליווי בניה",
-   "title": "שכונה חדשה צפויה לקום בצפון הרצליה",
-   "location": "הרצליה",
-   "price_info": "החל מ־539,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1747895689643196",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01265ee14c84aaffd2796"
-  },
-  {
-   "competitor": "ARIA נדל״ן וליווי בניה",
-   "title": "פספסתם את גליל ים? אל תפספסו את ההזדמנות הבאה בצפון הרצליה!",
-   "location": "הרצליה",
-   "price_info": "החל מ־670,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-07",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1915873212918756",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01267ea4794c1229a4d20"
-  },
-  {
-   "competitor": "Invested — השקעות נדל״ן חכמות",
-   "title": "בימים אלו אנחנו מצדיעים לחיילי מילואים וחיילי קבע !",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2223226418602009",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af012bdd4b32a65312bd9b1"
-  },
-  {
-   "competitor": "Invested — השקעות נדל״ן חכמות",
-   "title": "כבר שלושה חודשים אתם ביד2.",
-   "location": "באר שבע, חריש, חיפה, פתח תקווה",
-   "price_info": "החל מ־200,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1613749300222028",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af012c0fe17db87bee8de71"
-  },
-  {
-   "competitor": "Invested — השקעות נדל״ן חכמות",
-   "title": "אתה יושב בבית, קונה ומוכר מניות מהטלפון, ומנסה להרוויח יותר מהמדד.",
-   "location": null,
-   "price_info": "החל מ־200,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1601560647956590",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af012c29c5a65409fd5de4f"
-  },
-  {
-   "competitor": "Invested — השקעות נדל״ן חכמות",
-   "title": "מה הופך את אותה דירה לעסקה טובה לאדם אחד ולעסקה גרועה לאחר?",
-   "location": null,
-   "price_info": "החל מ־200,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=3347293068798128",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af012c43b7294e74c5cc138"
-  },
-  {
-   "competitor": "Invested — השקעות נדל״ן חכמות",
-   "title": "אם אתם אנשי קבע או מילואים ויש לכם לפחות 200 אלף שקל שצברתם להשקעה, כנראה שכבר שמעתם את המשפט:",
-   "location": null,
-   "price_info": "החל מ־200,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2637576800040894",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af012c6619134a4ac827365"
-  },
-  {
-   "competitor": "Land770",
-   "title": "יחידות קרקע אחרונות בחוף התכלת. 🚨 הרצליה - רצועת החוף האחרונה של גוש דן. 🌊",
-   "location": "תל אביב, הרצליה",
-   "price_info": null,
-   "running_since": "2026-09-10",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1378658967314425",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0143fe663a07b30b37e3a"
-  },
-  {
    "competitor": "Land770",
    "title": "הזדמנות כזאת לא פוגשים כל יום!",
    "location": "פתח תקווה",
    "price_info": "החל מ־199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-26",
+   "running_since": "2026-07-19",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1534478232057446",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0144174ba5b2df933c157"
+   "source_url": "https://www.facebook.com/ads/library/?id=2858722281156779",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af162817bbf30c83dcf5f69"
   },
   {
-   "competitor": "Land770",
-   "title": "הזדמנות כזאת לא פוגשים כל יום!",
-   "location": "הרצליה",
-   "price_info": "החל מ־499,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1111051268028336",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01445a4e589a54d02f932"
-  },
-  {
-   "competitor": "Land770",
-   "title": "הזדמנות כזאת לא פוגשים כל יום!",
-   "location": "פתח תקווה",
-   "price_info": "החל מ־199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-01",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1073682525672520",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01447aa0362913d142ca2"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "כפר סירקין לא יהפוך לעיר.",
-   "location": null,
-   "price_info": "החל מ־299,000 ₪ (לפי המודעה)",
-   "running_since": "2026-09-07",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1688907155506421",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015a754e7d88fabfd5346"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "על תחנת הקו הסגול, בצמוד לצומת סביון ובמרחק קצר מפארק איילון – פרויקט המשרדים החדש של בריטניה ישראל מושך תשומת לב באזור ",
+   "competitor": "אוריגו השקעות (Origo)",
+   "title": "⁨ למה אנשים מתפארים בזה ש”אין להם משכנתא”? והאם זו הטעות הכלכלית הכי גדולה שלהם?",
    "location": null,
    "price_info": null,
-   "running_since": "2026-10-27",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4572016249695470",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015a9b56dd629a7e920ad"
+   "source_url": "https://www.facebook.com/ads/library/?id=2108456593369109",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af165e5a1f2d354b04797f6"
   },
   {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "אחת ההזדמנויות המעניינות של השנה בשוק הקליניקות.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-15",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1124823337180125",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015ac902da6cd3689feb2"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "הכוח חוזר לקבוצות הרכישה: הקבוצה החזקה של ״בריטניה ישראל״ רוכשת משרדי בוטיק בצומת סביון עם הון עצמי של החל מ-32,000 ש״ח ",
-   "location": "יבנה",
+   "competitor": "אקו קפיטל",
+   "title": "דמיינו בוקר בכפר תבור ☀️",
+   "location": "כפר תבור",
    "price_info": null,
    "running_since": "2026-10-22",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1608106347778787",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015aebab9e35c80a02be3"
+   "source_url": "https://www.facebook.com/ads/library/?id=2121838208697336",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16675007b5343dbc09086"
   },
   {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "קבוצת הרכישה של בריטניה ישראל תציע קליניקות לשימוש עצמי או להשקעה בכ־28% פחות ממחירי השוק באזור.",
-   "location": null,
+   "competitor": "אקו קפיטל",
+   "title": "דמיינו בוקר בכפר תבור ☀️",
+   "location": "כפר תבור",
    "price_info": null,
-   "running_since": "2026-10-16",
+   "running_since": "2026-10-22",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1051124357976591",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015b071bc78cd6d4619a8"
+   "source_url": "https://www.facebook.com/ads/library/?id=2609517769470926",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af1667750a747ffd3cc844c"
   },
   {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "כפר סירקין לא יהפוך לעיר.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1069819342485193",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015b317aa0691d1fe0baa"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "אזור כפר סירקין משנה את פניו: אלפי יחידות דיור חדשות, תשתיות מתקדמות ותוכניות תחבורה משמעותיות נמצאות בתהליך קידום. במקב",
-   "location": null,
-   "price_info": "החל מ־299,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-19",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1800236747523555",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015b54c98fc5aa406c516"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "על תחנת הקו הסגול, בצמוד לצומת סביון ובמרחק קצר מפארק איילון –",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-15",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1915882122725158",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015b7efd230dbc2f5cb12"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "אחת ההזדמנויות המעניינות של השנה בשוק הקליניקות.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1403185118629693",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015ba671895108f0f14c5"
-  },
-  {
-   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
-   "title": "במערב נתניה כבר כמעט שלא נותרו עתודות קרקע גדולות לפיתוח מגורים. אחת הבולטות שבהן היא \"גבעת הפרחים\", מתחם של כ-800 דונם ",
-   "location": "נתניה",
-   "price_info": null,
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1364962838893661",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af015bc43dc5b55cb08e9d1"
-  },
-  {
-   "competitor": "א.ב מוראנו",
-   "title": "ראיתם אותנו, שמעתם על ההזדמנות ואולי עדיין יש לכם חששות.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-07-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1571464188097541",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af017232ca4df05e9f1a780"
-  },
-  {
-   "competitor": "אוראל נדל״ן",
-   "title": "אני מתכבדת להציג אצלכם חברת צוות בכירה במשרד של צוותא - תכירו את לוסי.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1590085539104136",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0179029ca22c7aea89e8f"
-  },
-  {
-   "competitor": "אוראל נדל״ן",
-   "title": "מצטערים, אנחנו מתקשים להציג סרטון זה.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1124584996632536",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01792d249a5cdf9320523"
-  },
-  {
-   "competitor": "אוראל נדל״ן",
-   "title": "🦖 דינוזאורים מבינים בהשקעות!",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1482774307090655",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0179472c20c6448e4057c"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן בישראל",
-   "title": "מחפשים השקעה חכמה שתניב לכם תשואה מהירה וגבוהה?  לכו על בטוח!",
-   "location": "נתניה",
-   "price_info": "החל מ־449,000 ₪ (לפי המודעה)",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2391798108226811",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a16ae5a817405299a65"
+   "source_url": "https://www.facebook.com/ads/library/?id=1611833923540961",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16f93575ad02df713400a"
   },
   {
-   "competitor": "הזדמנויות נדל״ן בישראל",
-   "title": "קרקע עם זכות לדירה בלב הוד השרון - הכי חמה בעולם הנדלן!",
-   "location": "הוד השרון",
-   "price_info": "החל מ־320,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-06",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4607596906163462",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a18a2662d2aa10b5e0a"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן בישראל",
-   "title": "מחפשים השקעה חכמה שתניב לכם תשואה מהירה וגבוהה?  לכו על בטוח!",
-   "location": "נתניה",
-   "price_info": "החל מ־449,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-07",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2334889597247582",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a1b758d68e653e0e27a"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן בישראל",
-   "title": "מחפשים השקעה חכמה שתניב לכם תשואה מהירה וגבוהה?  לכו על בטוח!",
-   "location": "נתניה",
-   "price_info": "החל מ־449,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-06",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4674412922878954",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a1d9a1318e5e6d1826f"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן בישראל",
-   "title": "מחפשים השקעה חכמה שתניב לכם תשואה מהירה וגבוהה?  לכו על בטוח!",
-   "location": "נתניה",
-   "price_info": "החל מ־449,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-06",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4497406973920971",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a1fd78c37e17a689432"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "✨ הזדמנות כזו לא ראינו כבר שנים! ✨",
-   "location": "גדרה",
-   "price_info": null,
-   "running_since": "2026-07-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1039038612198286",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a774a54d6f116654174"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "👩‍💼 עובדי מדינה - זה הזמן לדאוג לעצמכם!",
-   "location": "ראשון לציון",
-   "price_info": null,
-   "running_since": "2026-08-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1384621066552793",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a79247e2496f9763f8b"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "הזדמנות כזו לא ראינו כבר שנים!",
-   "location": "ראשון לציון",
-   "price_info": null,
-   "running_since": "2026-08-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1502511598293641",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a7b64557218c38eb6ff"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "הזדמנות כזו לא ראינו כבר שנים!",
-   "location": "ראשון לציון",
-   "price_info": null,
-   "running_since": "2026-10-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1063849073311867",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a7d817cd05df49c3be3"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "הזדמנות כזו לא ראינו כבר שנים!",
-   "location": "ראשון לציון",
-   "price_info": null,
-   "running_since": "2026-10-12",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1833714391400781",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a8028923909c4bf5a28"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "🏡 דירה חדשה בבת ים + קרקע להשקעה במתנה + הגרלה על רכב חדש? כן, שמעתם נכון! 🔥",
-   "location": "גדרה, תל אביב",
-   "price_info": "החל מ־2,250,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2296583921106337",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a829ff76e1651209cba"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "🔥 זאת ההזדמנות שאסור לכם לפספס.",
-   "location": "גדרה",
-   "price_info": "החל מ־89,000 ₪ (לפי המודעה)",
-   "running_since": "2026-08-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1388329065981904",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a85f83e89af1dcd79fd"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "🏡 דירה חדשה בבת ים + קרקע להשקעה במתנה + הגרלה על רכב חדש? כן, שמעתם נכון! 🔥",
-   "location": "גדרה, תל אביב",
-   "price_info": "החל מ־2,250,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1111292854826625",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a8773ccd1ec05069eca"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "הזדמנות כזו לא ראינו כבר שנים!",
-   "location": "ראשון לציון",
-   "price_info": null,
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2644098049374500",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a8aeed2a3247ca6724d"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "✨ הזדמנות נדל״נית שלא פוגשים כל יום ✨",
-   "location": "פתח תקווה",
-   "price_info": null,
-   "running_since": "2026-10-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=28969900899273054",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a8fa776b1ebce05abb7"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "🏡 דירה חדשה בבת ים + קרקע להשקעה במתנה + הגרלה על רכב חדש? כן, שמעתם נכון! 🔥",
-   "location": "גדרה, תל אביב",
-   "price_info": "החל מ־2,250,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1183505921013292",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a92e19ea4447fb45222"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "🏡 דירה חדשה בבת ים + קרקע להשקעה במתנה + הגרלה על רכב חדש? כן, שמעתם נכון! 🔥",
-   "location": "גדרה, תל אביב",
-   "price_info": "החל מ־2,250,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-25",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1102521912745392",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a94ae0d584de40616e4"
-  },
-  {
-   "competitor": "הזדמנויות נדל״ן מתחת לרדאר",
-   "title": "🏡 דירה חדשה בבת ים + קרקע להשקעה במתנה + הגרלה על רכב חדש? כן, שמעתם נכון! 🔥",
-   "location": "גדרה, תל אביב",
-   "price_info": "החל מ־2,250,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1129686629607123",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01a972f8d901ae5a21304"
-  },
-  {
-   "competitor": "חדשות למשקיעים",
-   "title": "לפרטים נוספים >>",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨סטנדרט המגורים החדש של רמת השרון | ביאליק 360 מבית קבוצת רינובו נדל\"ן ✨",
    "location": null,
    "price_info": null,
-   "running_since": "2026-10-19",
+   "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1108637588534571",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01b6f8d3e14875d50d0e4"
+   "source_url": "https://www.facebook.com/ads/library/?id=1270605251915639",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16f96837163a2259f2580"
   },
   {
-   "competitor": "חדשות למשקיעים",
-   "title": "לפרטים נוספים >>",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-31",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=2929352534117117",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16f99c4b6f75ceaf2a896"
+  },
+  {
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ חוויית המגורים החדשה של רמת השרון | ביאליק 360 מבית קבוצת רינובו נדל\"ן ✨",
    "location": null,
    "price_info": null,
-   "running_since": "2026-10-19",
+   "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1147537214883999",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01b719ad7cbfddd96a236"
+   "source_url": "https://www.facebook.com/ads/library/?id=2180680719328047",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16f9b8c44650c89269fc1"
   },
   {
-   "competitor": "חדשות למשקיעים",
-   "title": "פספסתם את שדה דב? רצועת הקרקע הפרטית האחרונה על קו החוף המרכזי של ישראל מגיעה לישורת האחרונה!",
-   "location": "תל אביב, הרצליה",
-   "price_info": "החל מ־495,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-24",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1624325279155688",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01b74e39a7bdfa0ac4adb"
+   "source_url": "https://www.facebook.com/ads/library/?id=1675394204291963",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16f9e4403fb6af31eec51"
   },
   {
-   "competitor": "טריגו השקעות נדל״ן",
-   "title": "העתיד מתחיל בהחלטה שלכם",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ פרויקט המגורים ביאליק 360 | רמת השרון",
    "location": null,
    "price_info": null,
-   "running_since": "2026-10-28",
+   "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2149099132380131",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01c28c5a9702f89d42ce6"
+   "source_url": "https://www.facebook.com/ads/library/?id=1123057607298966",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fa1153dd3291fef41fd"
   },
   {
-   "competitor": "טריגו השקעות נדל״ן",
-   "title": "הדרך הנכונה לדירה חדשה",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ חוויית המגורים החדשה של רמת השרון | ביאליק 360 מבית קבוצת רינובו נדל\"ן ✨",
    "location": null,
    "price_info": null,
    "running_since": "2026-11-01",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1835953757696944",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01c2a08dac90668e3e940"
+   "source_url": "https://www.facebook.com/ads/library/?id=1527303832541360",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fa3b576d2966f557249"
   },
   {
-   "competitor": "טריגו השקעות נדל״ן",
-   "title": "הצעד הראשון לבית משלכם",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1104241969243668",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01c2c0d4225878d758eeb"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "מתחם ח 500 - שכונה חדשה ומודרנית בחולון",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1025082987280604",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fca90c06e7f4e252c1e"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "התראה אחרונה לבעלי הזכויות במתחם חוף התכלת הרצליה:",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
    "location": "הרצליה",
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2327926814635841",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fcd7c1e21c536c29b74"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "מתחם ח 500 - שכונה חדשה ומודרנית בחולון",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1665826081549419",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fcfc5f1fae3f7087da4"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "התראה אחרונה לבעלי הזכויות במתחם חוף התכלת הרצליה:",
-   "location": "הרצליה",
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4742921312660761",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fd1f38c39487744fda2"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "מתחם ח 500 - שכונה חדשה ומודרנית בחולון",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1870913707410727",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fd44f5b431182f48cc2"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "התראה אחרונה לבעלי הזכויות במתחם חוף התכלת הרצליה:",
-   "location": "הרצליה",
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1553905566765847",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fd64134bd6be9d605b0"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "התראה אחרונה לבעלי הזכויות במתחם חוף התכלת הרצליה:",
-   "location": "הרצליה",
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1663723115155785",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fd94b34637d03b634e6"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "התראה אחרונה לבעלי הזכויות במתחם חוף התכלת הרצליה:",
-   "location": "הרצליה",
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1129271309753827",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fdb4f2d053784524bca"
-  },
-  {
-   "competitor": "עסקאות נדל״ן (ח/500 חולון)",
-   "title": "מתחם ח 500 - שכונה חדשה ומודרנית בחולון",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1460234606068093",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af01fdecd0b85d9f5073de8"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "רוב עסקאות הנדל״ן הטובות נפתחות לציבור רק אחרי שהכסף הגדול כבר בפנים. זו לא אחת מהן.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1460418502643267",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0209f3ef350be06708068"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "הורים שימו לב ❤️",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-01",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1027999553610426",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020a1dd6f5018232c60df"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "כשהניסיון של שייטת 13 פוגש הזדמנות נדל\"ן של פעם בעשור",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1596472541932983",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020a464a3565da47e1010"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "כשהניסיון של שייטת 13 פוגש הזדמנות נדל\"ן של פעם בעשור",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4650794138521846",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020a6ba5da011a79eb721"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "וובינר השקעה בשכונת יוקרה שמתוכננת על הים, עם יזמים יוצאי שייטת 13 שבנו 1,200 דירות בישראל.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-24",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2564992917307939",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020a97d334ed785cec0af"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "רוב עסקאות הנדל״ן הטובות נפתחות לציבור רק אחרי שהכסף הגדול כבר בפנים. זו לא אחת מהן.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-02-19",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1265401038816788",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020ab6b0c4add6f763897"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "וובינר השקעה בשכונת יוקרה שמתוכננת על הים, עם יזמים יוצאי שייטת 13 שבנו 1,200 דירות בישראל.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-30",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=28523435093979026",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020ad0c1dc8cca4883577"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "--- האמור בסרטון מבוסס על סיפור אמיתי. אנחנו בדקה ה-90 ---",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-17",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1596294448844019",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020af6bff895e4fd47949"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "התוכנית קרובה לפירסום מחודש! אל תפספסו את ההזדמנות!",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-08-20",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1043900108511905",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020b247ae2733b457d8b8"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "התוכנית קרובה לפירסום מחודש! אל תפספסו את ההזדמנות!",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-12",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1736501107430461",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020b4b55e054942dc1204"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "וובינר השקעה בשכונת יוקרה שמתוכננת על הים, עם יזמים יוצאי שייטת 13 שבנו 1,200 דירות בישראל.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1427388439379809",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020b64af3595ee92790dc"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "התוכנית קרובה לפירסום מחודש! אל תפספסו את ההזדמנות!",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-11",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=38943043025339891",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020b9ad94aa49571c9eb2"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "וובינר השקעה בשכונת יוקרה שמתוכננת על הים, עם יזמים יוצאי שייטת 13 שבנו 1,200 דירות בישראל.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-30",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1632615208655891",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020bb7bf49b722102e0c9"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "התוכנית קרובה לפירסום מחודש! אל תפספסו את ההזדמנות!",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-11",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1733993861047109",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020beee836145c56ccd6e"
-  },
-  {
-   "competitor": "פרקטיקה — השקעות ועצמאות פיננסית",
-   "title": "התוכנית קרובה לפירסום מחודש! אל תפספסו את ההזדמנות!",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-24",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1560790889069271",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af020c025dfb0d1f109cee8"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "לגור בתל אביב, אבל להתעורר לשקט של כפר 🌳",
-   "location": "תל אביב",
-   "price_info": "החל מ־3,215,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2149284332327692",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021164dfd442f7a7f10e5"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "בואו לחיות את החיים שאתם באמת רוצים!",
-   "location": "תל אביב",
-   "price_info": null,
-   "running_since": "2026-10-15",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1121621173780115",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0211895390025b57d3e91"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "אתם יכולים לבלות את חודש נובמבר",
-   "location": null,
-   "price_info": "החל מ־2,199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-29",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2351072032313707",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0211a5ce1f0fe9646242e"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "המשפחה התרחבה וצריכה יותר SPACE? דירות 5-6 חדרים מרווחות במחירי השקה מיוחדים, החל מ־4,650,00 ₪ בפרויקט הבוטיק Two in One",
-   "location": "הרצליה",
-   "price_info": null,
-   "running_since": "2026-10-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2057263718994965",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0211d302b851831ceea5e"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "פגשנו את יקי אמסלם מנכ\"ל קבוצת אלמוג,",
-   "location": "חיפה",
-   "price_info": null,
-   "running_since": "2026-11-01",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2524904497994432",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0211f6a79f8e1f039d530"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "הדירה המושלמת, הריהוט המושלם,",
-   "location": null,
-   "price_info": "החל מ־75,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-25",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2188140502581801",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021215029902ffc8ce725"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "לגור בתל אביב זה בדרך כלל לבחור בין מיקום למרחב,",
-   "location": "תל אביב",
-   "price_info": "החל מ־3,215,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-15",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=3540365586173371",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02123bc65c51824fbdf23"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "הקליקו לתיאום סיור בדירה >>",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-01",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2170543660205909",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0212559c4bf3d50f07dd3"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "העסקה הכי שווה בתל אביב!",
-   "location": "תל אביב",
-   "price_info": "החל מ־2,199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1116863987741476",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0212849d17a6b7dba6032"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "העסקה הכי שווה בתל אביב!",
-   "location": "תל אביב",
-   "price_info": "החל מ־2,199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1148661451053414",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0212aa8fb95e16f3ffe42"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "לקנות דירה בתל אביב",
-   "location": "תל אביב",
-   "price_info": null,
-   "running_since": "2026-10-18",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=933174012953810",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0212c65ff68c54c8790c4"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "דירות הפרימיום האחרונות, במחיר הכי משתלם בעיר! 🏢",
-   "location": "חיפה",
-   "price_info": "החל מ־2,280,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-01",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1611540484038121",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0212ec338723fdf428599"
-  },
-  {
-   "competitor": "קבוצת אלמוג",
-   "title": "העסקה הכי שווה בתל אביב!",
-   "location": "תל אביב",
-   "price_info": "החל מ־2,199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1671139261254461",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02130ac1cef62489bef9e"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "הזדמנות פז למגורים במרחק 400 מטר מחוף הים❣",
-   "location": null,
-   "price_info": "החל מ־1,950,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1653079362993858",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021dba6d56b1082185fc6"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "הזדמנות פז למגורים במרחק 400 מטר מחוף הים❣",
-   "location": null,
-   "price_info": "החל מ־1,950,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1490561816278951",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021de1cc27a20279b9622"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "בית חדש, 400 מטר מהים ❣️",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1636374891310932",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021e3ba5da011a79eca1f"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "משה, בן 50, מנהל בכיר עם דירה קיימת בתל אביב, התחיל לחשוב על השקעה נוספת לקראת הפנסיה. לפני שהתקדם, הוא ישב וסימן לעצמו ",
-   "location": "תל אביב",
-   "price_info": "החל מ־380,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2247756052444818",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021e564a25751be178fac"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "הזדמנות פז למגורים במרחק 400 מטר מחוף הים❣",
-   "location": null,
-   "price_info": "החל מ־1,950,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1858929825105134",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021e7bf970219c47e7d35"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "הזדמנות פז למגורים במרחק 400 מטר מחוף הים❣",
-   "location": null,
-   "price_info": "החל מ־1,950,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1024617960037418",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021eb17f3f32b9a3f754f"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "בית חדש, 400 מטר מהים ❣️",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2153154239409456",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021ed68b10fee5c1bb5fc"
-  },
-  {
-   "competitor": "קבוצת דלתא נדל״ן ובניה",
-   "title": "לפני כמה שבועות ישב איתנו משקיע שמחזיק כבר שנתיים דירה להשכרה באזור רמת גן. הוא הראה לנו את הטבלה שלו בגאווה - שוכרים יצ",
-   "location": "תל אביב",
-   "price_info": "החל מ־380,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-02",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1670607491169726",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af021f1a9cee92300aa2278"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "לראשונה בישראל",
-   "location": "רחובות, נס ציונה",
-   "price_info": "החל מ־550,000 ₪ (לפי המודעה)",
-   "running_since": "2026-08-13",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1041627731964435",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0224d54d97b35342aac85"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "⁨\tשהחיינו וקיימנו והגיענו לזמן הזה.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2424640254691615",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0224fbcf1459a35d23398"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "קונקשיין מקדמת מאות יחידות דיור במתחם המייסדים ומייצרת הזדמנות למשפחות להשקיע בקרקע ולהתקדם לדירה בחצי מחיר",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=941469068383636",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02252dcf0ceaed40d5b42"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "איך תוכלו להשקיע בנדל\"ן במרכז הארץ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-24",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1067665489105640",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02254b96e5db471827a5b"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "קונקשיין מקדמת מאות יחידות דיור במתחם המייסדים ומייצרת הזדמנות למשפחות להשקיע בקרקע ולהתקדם לדירה בחצי מחיר",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=959131456437260",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af022565aad7026e3ab00e4"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "קבוצת קונקשיין מקדמת מאות יחידות דיור במתחם המייסדים ומייצרת הזדמנות למשפחות להשקיע בקרקע ולהתקדם לדירה בחצי מחיר",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=934379895857304",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af022586ea32d8f3d29d916"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "מצטערים, אנחנו מתקשים להציג סרטון זה.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-07-30",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1037671372332149",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0225a5e556e948ae48716"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "מצטערים, אנחנו מתקשים להציג סרטון זה.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-07-30",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1060121136976138",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0225c0b9cf1b352c2bda9"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "״קרקע להשקעה שתאפשר לכם להתקדם",
-   "location": "רחובות, יבנה, נס ציונה",
-   "price_info": "החל מ־550,000 ₪ (לפי המודעה)",
-   "running_since": "2026-07-06",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1556068806181583",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0225e9f3c8c6ba70922e0"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "״קרקע להשקעה שתאפשר לכם להתקדם",
-   "location": "רחובות, יבנה, נס ציונה",
-   "price_info": "החל מ־550,000 ₪ (לפי המודעה)",
-   "running_since": "2026-08-13",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1702991974090270",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02260ff14b696b4a099eb"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "איך תוכלו להשקיע בנדל\"ן במרכז הארץ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-08-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1398752262156428",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02263e3544dd749c4a8a0"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "מצטערים, אנחנו מתקשים להציג סרטון זה.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-07-31",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2037347760505932",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0226465868f408e3357f6"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "איך תוכלו להשקיע בנדל\"ן במרכז הארץ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-09-24",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1689080742352636",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02269d2c3090d48796ea0"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "״קרקע להשקעה שתאפשר לכם להתקדם",
-   "location": "רחובות, יבנה, נס ציונה",
-   "price_info": "החל מ־550,000 ₪ (לפי המודעה)",
-   "running_since": "2026-07-30",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1346283087524870",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0226c8b106cac6bd6740f"
-  },
-  {
-   "competitor": "קבוצת קונקשיין Connection Group",
-   "title": "״קרקע להשקעה שתאפשר לכם להתקדם",
-   "location": "רחובות, יבנה, נס ציונה",
-   "price_info": "החל מ־550,000 ₪ (לפי המודעה)",
-   "running_since": "2026-08-13",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1034466966247341",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0226ecc666d34e3f75a8e"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "כשעסקת הנדל\"ן כל כך טובה,",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-27",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1146988304466868",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02367f201e44474add5d0"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "חדר לכל ילד, מרפסת לארוחות שישי, ושכנים שמכירים בשמות.",
-   "location": null,
-   "price_info": "החל מ־199,000 ₪ (לפי המודעה)",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=3697425073747659",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0236a781d6da1c301594c"
+   "source_url": "https://www.facebook.com/ads/library/?id=2059074931446921",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fa6712476773714ae90"
   },
   {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "אצל ההורים תמיד יהיה לכם מקום. אבל הגיע הזמן שיהיה לכם מקום משלכם.",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ מיני פנטהאוזים 4,5 חד' ברובע הדר רמת השרון | ביאליק 360 מבית קבוצת רינובו נדל\"ן ✨",
    "location": null,
-   "price_info": "החל מ־199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-29",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2051532992216448",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0236ceef51f1a1908cedd"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "כלל הברזל בהשקעות:",
-   "location": null,
-   "price_info": "החל מ־700,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1065968299607652",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0236ecd8d7d7f8856446f"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "כשעסקת הנדל\"ן כל כך טובה,",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-27",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2968208953543329",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02370c8bcb943e28e9e19"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
-   "location": null,
-   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
+   "price_info": "החל מ־4,690,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1867446137833329",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0237402ca0ac098923b8c"
+   "source_url": "https://www.facebook.com/ads/library/?id=2225144148347480",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fa9c0a2e82d58f754b4"
   },
   {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "כשעסקת הנדל\"ן כל כך טובה,",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ חוויית המגורים החדשה של רמת השרון | ביאליק 360 מבית קבוצת רינובו נדל\"ן ✨",
    "location": null,
    "price_info": null,
-   "running_since": "2026-10-27",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1855384125619252",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af023765328170d56b2ed10"
+   "source_url": "https://www.facebook.com/ads/library/?id=2061379517845832",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fab19ce5f072bcefed2"
   },
   {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
-   "location": null,
-   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2406748766803203",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0237845ecfe32e3554f2c"
+   "source_url": "https://www.facebook.com/ads/library/?id=4541999289375392",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fae4449cff635270158"
   },
   {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
-   "location": null,
-   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1990203625270647",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0237a561fb2301ab75a52"
+   "source_url": "https://www.facebook.com/ads/library/?id=1670009924634696",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fb157498878e76e7869"
   },
   {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "אצל ההורים תמיד יהיה לכם מקום. אבל הגיע הזמן שיהיה לכם מקום משלכם.",
-   "location": null,
-   "price_info": "החל מ־199,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-29",
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ הגיע הזמן להצטרף לפרויקט U ✨",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2869199450112460",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0237d2570357e76d22fd8"
+   "source_url": "https://www.facebook.com/ads/library/?id=2666900010407122",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fb37e7a7c5348878932"
   },
   {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "כלל הברזל בהשקעות:",
-   "location": null,
-   "price_info": "החל מ־700,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-08",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1601802588071521",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0237fae6d7cac787dce86"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
-   "location": null,
-   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-29",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1095259083348457",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02381993ce33d81504a82"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "פחות בית לתחזק ויותר בית לארח:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1607831857061713",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af023834fa9b1ee75b94f04"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "כשעסקת הנדל\"ן כל כך טובה,",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-27",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=945932471654617",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af023863eab8af175f1630c"
-  },
-  {
-   "competitor": "קבוצת רילקס (Relax Group)",
-   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
-   "location": null,
-   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-29",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4518426645036344",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02388bb7067a517dfb4e0"
-  },
-  {
-   "competitor": "קרקעות בישראל (עמוד מפרסם)",
-   "title": "קרקע בקריית ביאליק החל מ-299,000 ₪ בלבד - השאירו פרטים וגלו את ההזדמנות! 🏡",
-   "location": null,
-   "price_info": "החל מ־299,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2101902324031482",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af023f846a5d5807b563a47"
-  },
-  {
-   "competitor": "Next Tower",
-   "title": "העתיד שלהם מתחיל בהחלטות שאתם מקבלים היום!",
-   "location": "ראשון לציון",
-   "price_info": null,
+   "competitor": "רינובו (Renovo)",
+   "title": "✨ חוויית המגורים החדשה של רינובו נדל\"ן",
+   "location": "הרצליה",
+   "price_info": "החל מ־4,100,000 ₪ (לפי המודעה)",
    "running_since": "2026-11-01",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=28876502938639614",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0253a638aed056c8f1df3"
+   "source_url": "https://www.facebook.com/ads/library/?id=1123825660042307",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fb6a6a2985c1010ed5e"
   },
   {
-   "competitor": "Next Tower",
-   "title": "כולם מדברים על קרקעות.",
-   "location": null,
+   "competitor": "רינובו (Renovo)",
+   "title": "‏הדירה שחשבתם עליה חייבת מבט נוסף!",
+   "location": "הרצליה",
    "price_info": null,
-   "running_since": "2026-10-21",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2097114627588884",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0253ed766c59333910611"
+   "source_url": "https://www.facebook.com/ads/library/?id=1443193007952263",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af16fb86ac19677dfddf268"
   },
   {
    "competitor": "Next Tower",
    "title": "אנחנו מגייסים אנשי ונשות מכירות בראשון לציון!",
    "location": "ראשון לציון",
    "price_info": null,
-   "running_since": "2026-11-05",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1895074097991048",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0254185d30eead81b52af"
+   "source_url": "https://www.facebook.com/ads/library/?id=1464936455590463",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af170a286b70bfc37b9c0c2"
   },
   {
-   "competitor": "Next Tower",
-   "title": "כמה שווה כושר השכנוע שלכם? 🔥",
-   "location": "ראשון לציון",
-   "price_info": "החל מ־25,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1050234014703748",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02543d2abd0f20fcf4637"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע במרכז הארץ?",
-   "location": "רחובות",
-   "price_info": "החל מ־79,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1629747272183379",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a8130cddaa74234be4f"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע בישראל?",
-   "location": "אשדוד",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-27",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1153638717134723",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a83705d7589c339696f"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע באשדוד?",
-   "location": "אשדוד",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=29085114451146022",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a873e0b333ffaaa07c1"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "השקעה ביחידות קרקע באשדוד — הזדמנות להיכנס לשוק הנדל״ן באזור מבוקש, עם קרקע פרטית בטאבו ופוטנציאל עתידי.",
-   "location": "אשדוד",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1660900372215938",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a8910a8468839bafb8c"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים קרקע להשקעה ברחובות?",
-   "location": "רחובות",
-   "price_info": "החל מ־89,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-18",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1118486490554476",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a8c848bc30647aed711"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים הזדמנות להשקעה בקרקע באשדוד?",
-   "location": "אשדוד",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-28",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1602473077549850",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a8e86257424405798b8"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "לפני שמשקיעים בקרקע — בודקים את הנתונים.",
-   "location": "רחובות",
-   "price_info": "החל מ־89,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2401593877337929",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a91114b8af8fe0d1a76"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע בישראל בסכום התחלתי נגיש?",
-   "location": "גדרה (מתחם 9)",
-   "price_info": "החל מ־49,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-26",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2212087432703966",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a938d7e8959b6f2e6d0"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע בישראל?",
-   "location": "רחובות",
-   "price_info": "החל מ־89,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-25",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=3627238824109074",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a95848bc30647aed714"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "📍 קרקע פרטית בטאבו — החל מ־99,000 ₪",
-   "location": "גדרה, רחובות, אשדוד, חדרה, הוד השרון",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1617216986558944",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a9812dd0af7ddd3fe5b"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "קרקע בלב רחובות — הזדמנות נדירה להשקעה ארוכת טווח בקרקע פרטית.",
-   "location": "רחובות",
-   "price_info": "החל מ־79,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1104398165828271",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a9c23f7968499be6aa1"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע במרכז הארץ?",
-   "location": "רחובות",
-   "price_info": "החל מ־79,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2326240661506308",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02a9faa90c261ffe5bac7"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים הזדמנות להשקעה בקרקע בישראל?",
-   "location": "אשדוד",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-29",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4613641012250757",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02aa15bfa94f381a610d9"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "לפני שמשקיעים בקרקע — בודקים את הנתונים.",
-   "location": "גדרה (מתחם 9)",
-   "price_info": "החל מ־49,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-03",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1644208313775479",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02aa3c806ef4c54f22466"
-  },
-  {
-   "competitor": "גלובל השקעות נדל״ן",
-   "title": "מחפשים אפשרות להשקעה בקרקע באשדוד?",
-   "location": "אשדוד",
-   "price_info": "החל מ־99,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1446137013651956",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02aa5e90b59df4ee86399"
-  },
-  {
-   "competitor": "יוריקה (קבוצת אברהם)",
-   "title": "היום זו קרקע - בקרוב זה העתיד שלכם.",
-   "location": "נס ציונה",
-   "price_info": "החל מ־250,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-24",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=3647920092033466",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02b792b798743c6672c0e"
-  },
-  {
-   "competitor": "יוריקה (קבוצת אברהם)",
-   "title": "היום זו קרקע - העתיד שלכם מתחיל בבחירה של היום.",
-   "location": null,
-   "price_info": "החל מ־150,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-22",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=3441715425998593",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02b7cef5e666221668102"
-  },
-  {
-   "competitor": "נדל״ן בגובה העיניים",
-   "title": "רכישת קליניקה ב32,000 ₪ הון עצמי בלבד!",
-   "location": "יהוד",
-   "price_info": "החל מ־7,700 ₪ (לפי המודעה)",
-   "running_since": "2026-07-22",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1511476017418746",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02c8cd8c80f710b7bed23"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "השקעה על הים מתחילה כאן.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-10-25",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2399266580609263",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ce7dd498f13015c1fec"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "השקעה על הים מתחילה כאן.",
-   "location": null,
-   "price_info": null,
+   "competitor": "Real Invest — חדשות הכלכלה והפיננסים",
+   "title": "תסתכלו על המפה: כפר סירקין, דקות מפתח תקווה, מראש העין וממוקדי ההייטק של גוש דן. ממש לידו מתוכננים אלפי דירות חדשות!",
+   "location": "פתח תקווה",
+   "price_info": "החל מ־299,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-19",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=924795377120368",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ce9e9b05cd1f7eac4ba"
+   "source_url": "https://www.facebook.com/ads/library/?id=1851947146161586",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17470444994045ae5362c"
   },
   {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "בואו להרוויח שכר גבוה + עמלות מתגמלות בחברת נדל\"ן בראשון לציון,",
+   "competitor": "איתמר אבירם — יזמות וליווי השקעות",
+   "title": "ידע מוקדם בנדל\"ן שווה המון כסף. קבלו עסקאות פינוי-בינוי מחתרתיות ועדכונים חמים – ישירות לנייד שלכם! 📱🏢",
+   "location": null,
+   "price_info": null,
+   "running_since": "2026-07-12",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=1267390225326127",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17601ded106755f0ca13b"
+  },
+  {
+   "competitor": "איתמר אבירם — יזמות וליווי השקעות",
+   "title": "אם הייתי אומר לכם שיש מס' גופים ענקיים עם אינטרס גבוה, שיעשו הכל, אבל הכל כדי שפרויקט נדל\"ן מסוים יצליח?",
+   "location": "יבנה",
+   "price_info": null,
+   "running_since": "2026-08-30",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=1774965363657180",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17604cc0865d20d859fef"
+  },
+  {
+   "competitor": "המרכז הארצי לקרקעות",
+   "title": "״חבל שלא בדקנו את זה אז.״",
    "location": "ראשון לציון",
-   "price_info": null,
-   "running_since": "2026-11-01",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1766927324415882",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ceb65d112bfdf752187"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קפריסין הופכת בשנים האחרונות ליעד החם ביותר למשקיעים מישראל. רק 38 דקות מתל-אביב, בלי קונקשנים ובלי מאמץ – והחיים נראים ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2176519416554778",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cee48215b2c7f731b67"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קפריסין הופכת בשנים האחרונות ליעד החם ביותר למשקיעים מישראל. רק 38 דקות מתל-אביב, בלי קונקשנים ובלי מאמץ – והחיים נראים ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1701250064892443",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cf111cd460aa50a3bf1"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "ההיתר התקבל – וחלון ההזדמנויות בקפריסין מתחיל להיסגר.",
-   "location": "תל אביב",
-   "price_info": null,
+   "price_info": "החל מ־230,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-26",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1139930265181654",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cf43adf924851faae47"
+   "source_url": "https://www.facebook.com/ads/library/?id=4167959390173051",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af177a8f7f78c02e5203f71"
   },
   {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "מתחם ה-1000 >> יוצאים לדרך.",
+   "competitor": "המרכז הארצי לקרקעות",
+   "title": "מכירים את המשפט \"איך לא קנינו שם לפני 10 שנים?\" 🤷‍♂️",
    "location": "ראשון לציון",
-   "price_info": "החל מ־1,390,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1521483889834271",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cf652fff286c98befc7"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "ההיתר התקבל: פרויקט הריזורט הגדול בקפריסין קיבל היתר בנייה.",
-   "location": "תל אביב",
-   "price_info": null,
+   "price_info": "החל מ־230,000 ₪ (לפי המודעה)",
    "running_since": "2026-10-26",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1093917770043267",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cf94fce9e89ab28b746"
+   "source_url": "https://www.facebook.com/ads/library/?id=28859648853701143",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af177abb518b5423c3e26b9"
   },
   {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "פספסתם את מתחם ה-1000? אל תפספסו את פארק הים! 🌊",
+   "competitor": "המרכז הארצי לקרקעות",
+   "title": "מכירים את המשפט \"איך לא קנינו שם לפני 10 שנים?\" 🤷‍♂️",
    "location": "ראשון לציון",
-   "price_info": "החל מ־490,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-05",
+   "price_info": "החל מ־230,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-26",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1483743090306002",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cfc2401dd49b1727b37"
+   "source_url": "https://www.facebook.com/ads/library/?id=2984436631920768",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af177adb46376c5f936f637"
   },
   {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קפריסין הופכת בשנים האחרונות ליעד החם ביותר למשקיעים מישראל. רק 38 דקות מתל-אביב, בלי קונקשנים ובלי מאמץ – והחיים נראים ",
+   "competitor": "קבוצת אלמוג",
+   "title": "זו לא סתם דירה, זו יצירה! 🎨",
+   "location": null,
+   "price_info": "החל מ־2,815,000 ₪ (לפי המודעה)",
+   "running_since": "2026-09-24",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=1245736357749955",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17b2309117b0f0c3aa0fe"
+  },
+  {
+   "competitor": "קבוצת רילקס (Relax Group)",
+   "title": "אצל ההורים תמיד יהיה לכם מקום. אבל הגיע הזמן שיהיה לכם מקום משלכם.",
+   "location": null,
+   "price_info": "החל מ־199,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-29",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=1377846870848847",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17c6655b291296383da4b"
+  },
+  {
+   "competitor": "קבוצת רילקס (Relax Group)",
+   "title": "כלל הברזל בהשקעות:",
+   "location": null,
+   "price_info": "החל מ־700,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-08",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=1792976508607125",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17c6911025d9ca5d7109a"
+  },
+  {
+   "competitor": "קבוצת רילקס (Relax Group)",
+   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
+   "location": null,
+   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-31",
+   "lang": "עברית",
+   "source_url": "https://www.facebook.com/ads/library/?id=1110181938285478",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17c6d6b8108c9718714e4"
+  },
+  {
+   "competitor": "קבוצת רילקס (Relax Group)",
+   "title": "כשעסקת הנדל\"ן כל כך טובה,",
    "location": null,
    "price_info": null,
-   "running_since": "2026-11-04",
+   "running_since": "2026-10-27",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1142881271512796",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02cfed06499bede8d4ca8"
+   "source_url": "https://www.facebook.com/ads/library/?id=2010013779679334",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17c6f7ba6ed7c8efae5af"
   },
   {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קפריסין הופכת בשנים האחרונות ליעד החם ביותר למשקיעים מישראל. רק 38 דקות מתל-אביב, בלי קונקשנים ובלי מאמץ – והחיים נראים ",
+   "competitor": "קבוצת רילקס (Relax Group)",
+   "title": "הילדים כבר יצאו מהבית. אתם עדיין מתחזקים את כל החדרים.",
    "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
+   "price_info": "החל מ־2,699,000 ₪ (לפי המודעה)",
+   "running_since": "2026-10-31",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1147254228262364",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02d054f92e7b455646901"
+   "source_url": "https://www.facebook.com/ads/library/?id=1745268573215531",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17c72e737d6d55a991a83"
   },
   {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קרקע לדירה עתידית בנס ציונה",
-   "location": "נס ציונה",
-   "price_info": null,
-   "running_since": "2026-11-07",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1692706718937862",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02d078d4bb28613d6c3ac"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קפריסין הופכת בשנים האחרונות ליעד החם ביותר למשקיעים מישראל. רק 38 דקות מתל-אביב, בלי קונקשנים ובלי מאמץ – והחיים נראים ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1025362360584007",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02d0af0fdc51b219079d6"
-  },
-  {
-   "competitor": "נדל״ן נדל״ן (כהן פליקס)",
-   "title": "קפריסין הופכת בשנים האחרונות ליעד החם ביותר למשקיעים מישראל. רק 38 דקות מתל-אביב, בלי קונקשנים ובלי מאמץ – והחיים נראים ",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-04",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1675940767466515",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02d0cc730e382587d57e3"
-  },
-  {
-   "competitor": "ספרטה — ליווי השקעות נדל״ן",
-   "title": "<סרטון ששווה לכם מאות אלפים!!>",
-   "location": null,
-   "price_info": null,
+   "competitor": "ואלורה נדל\"ן",
+   "title": "הזדמנות נדירה להשקעה בקרקע בגני תקווה - בבלעדיות‼️",
+   "location": "גני תקווה",
+   "price_info": "החל מ־239,000 ₪ (לפי המודעה)",
    "running_since": "2026-11-02",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1102837812381575",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02d7d3ea822037e454797"
-  },
-  {
-   "competitor": "פאוור קאפל — נדל״ן על הים",
-   "title": "אנחנו איתכם הרבה מעבר ללמצוא עסקה טובה ולייצר לכם רווח.",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-07-06",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4571672806397371",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02df7e08725c19ec8fedd"
-  },
-  {
-   "competitor": "פאוור קאפל — נדל״ן על הים",
-   "title": "מה אם היינו אומרים לך שהיית יכול להיכנס לעסקאות נדל״ן בארץ מכל נקודת פתיחה (אפילו ללא הון עצמי בכלל)  ולקבל פטור ממס רכי",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-08-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1040930845596833",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02df99056ac09d5ca44d9"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1231657173082428",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ead983db3b3ef23a3b1"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1601359081113164",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02eafe69a69680f52cdf5"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1627032089230050",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02eb2778046aa6786f917"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1482736597330420",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02eb4e5f927db131d6767"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה”",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1436354018685831",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02eb7e1e54b9e95c62666"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "כיצד ניתן להגיע לדירה חדשה בישראל עם הון עצמי 250 אלף ש\"ח? ראיון עם מאיר פרי מנכ\"ל קבוצת ראדיסון",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=968527949242112",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02eb9b7e847558845faac"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "כיצד ניתן להגיע לדירה חדשה בישראל עם הון עצמי 250 אלף ש\"ח? ראיון עם מאיר פרי מנכ\"ל קבוצת ראדיסון",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1664862368564394",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ebb0ab02be7a4cadc91"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1534437908497296",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ebef3dd6209e9ef2e5c"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=29426835820273875",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ec06b3f6086cda5817a"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1128411433280390",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ec28f37bc3a181c623f"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1157359280382041",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ec4335090b5a30d4c46"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1126547176416624",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ec79e31345eefa14577"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "אתם מרוויחים יפה, אפילו מעל הממוצע אך עדיין לא מצליחים לקנות דירה? אתם לא אשמים ואתם לא לבד! דור שלם נולד למציאות כמעט ב",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1868739811040890",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ecacf46dc72a03ade28"
-  },
-  {
-   "competitor": "קבוצת ראדיסון Radison Group",
-   "title": "קבוצת ראדיסון מציגה את “מצפה טליה” – ההזדמנות הנדל״נית הנדירה שמגובה בהטבות מדינה:",
-   "location": null,
-   "price_info": null,
-   "running_since": "2026-11-05",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1931563091171573",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af02ecd98f7800c3601988b"
-  },
-  {
-   "competitor": "ואלורה נדל\"ן",
-   "title": "הזדמנות נדירה להשקעה בקרקע בגני תקווה - בבלעדיות - נשארו מספר יחידות אחרונות - אל תפספסו.",
-   "location": "גני תקווה",
-   "price_info": "החל מ־239,000 ₪ (לפי המודעה)",
-   "running_since": "2026-10-21",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1418561987149881",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0304bb2780070d57e9597"
-  },
-  {
-   "competitor": "ואלורה נדל\"ן",
-   "title": "🏡 קרקע בהליכי תכנון בגני תקווה - במיקום אסטרטגי בלב אזור מבוקש!",
-   "location": "גני תקווה",
-   "price_info": null,
-   "running_since": "2026-11-07",
-   "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=4087435951553378",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0304dfc59e806e4c2e19f"
+   "source_url": "https://www.facebook.com/ads/library/?id=1141337888547215",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17e6ec5af5445783d181d"
   },
   {
    "competitor": "ואלורה נדל\"ן",
    "title": "הזדמנות נדירה להשקעה בקרקע בגני תקווה - בבלעדיות‼️",
    "location": "גני תקווה",
    "price_info": "החל מ־239,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
+   "running_since": "2026-10-18",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1156907430251907",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0305093979e2dd2d51f03"
+   "source_url": "https://www.facebook.com/ads/library/?id=1854302722391095",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17e71b0095d1a738e21c5"
   },
   {
    "competitor": "ואלורה נדל\"ן",
    "title": "הזדמנות נדירה להשקעה בקרקע בגני תקווה - בבלעדיות‼️",
    "location": "גני תקווה",
    "price_info": "החל מ־239,000 ₪ (לפי המודעה)",
-   "running_since": "2026-11-04",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1120848640324037",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af0305214c57d36c3677e72"
+   "source_url": "https://www.facebook.com/ads/library/?id=1657043539210695",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17e73c05e4930287a02d9"
   },
   {
-   "competitor": "אלפא יזמות ובנייה",
-   "title": "כרטיס הכניסה שלכם לעולם הנדל\"ן",
-   "location": "חיפה",
-   "price_info": null,
-   "running_since": "2026-06-10",
+   "competitor": "ואלורה נדל\"ן",
+   "title": "הזדמנות נדירה להשקעה בקרקע בגני תקווה - בבלעדיות‼️",
+   "location": "גני תקווה",
+   "price_info": "החל מ־239,000 ₪ (לפי המודעה)",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=1014634864481860",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af030c098c9f8e034473045"
+   "source_url": "https://www.facebook.com/ads/library/?id=1029978630119760",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17e7663c00ac189c321ba"
   },
   {
-   "competitor": "אלפא יזמות ובנייה",
-   "title": "✨ דרוש/ה מנהל/ת סושיאל ויוצר/ת תוכן | חצי משרה",
-   "location": "חיפה",
-   "price_info": null,
-   "running_since": "2026-11-04",
+   "competitor": "ואלורה נדל\"ן",
+   "title": "הזדמנות נדירה להשקעה בקרקע בגני תקווה - בבלעדיות‼️",
+   "location": "גני תקווה",
+   "price_info": "החל מ־239,000 ₪ (לפי המודעה)",
+   "running_since": "2026-11-08",
    "lang": "עברית",
-   "source_url": "https://www.facebook.com/ads/library/?id=2098420724113699",
-   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af030c42837273daae4413f"
+   "source_url": "https://www.facebook.com/ads/library/?id=1425551205948121",
+   "app_url": "https://c.zamarotgroup.co.il/inspiration?view=ads&item=6af17e7a37af81252423b91d"
   }
  ],
- "skipped_existing": 82,
+ "skipped_existing": 129,
  "no_active_ads_or_blocked": [
+  "Invested — השקעות נדל״ן חכמות",
   "KESHET Real Estate Marketing",
   "LAAM",
   "NdN השקעות נדל״ן",
   "Prime Karkaot",
   "U יזמות והשקעות נדל״ן",
   "Upgrde — עמית מינרבו",
-  "אוריגו השקעות (Origo)",
-  "איתמר אבירם — יזמות וליווי השקעות",
-  "אקו קפיטל",
-  "המרכז הארצי לקרקעות",
+  "גלובל השקעות נדל״ן",
+  "הזדמנויות נדל״ן מתחת לרדאר",
+  "טריגו השקעות נדל״ן",
+  "יוריקה (קבוצת אברהם)",
   "כרמית חובל — יזמות והשקעות נדל״ן",
-  "רינובו (Renovo)",
-  "שוקי עאמר — תיווך והשקעות נדל״ן"
+  "נדל״ן בגובה העיניים",
+  "נדל״ן בלב הביקוש",
+  "נדל״ן נדל״ן (כהן פליקס)",
+  "עסקאות נדל״ן (ח/500 חולון)",
+  "פרקטיקה — השקעות ועצמאות פיננסית",
+  "קבוצת דלתא נדל״ן ובניה",
+  "קבוצת ראדיסון Radison Group",
+  "קרקעות בישראל (עמוד מפרסם)",
+  "שוקי עאמר — תיווך והשקעות נדל״ן",
+  "אלפא יזמות ובנייה"
  ],
  "needs_translation": [],
  "errors": [],
- "posted_to_sales": true,
- "note": "פייסבוק נפתח מחדש (נוספו www.facebook.com ו־static/scontent fbcdn לסביבה). 186 מודעות נוספו לצמרת עם צילומים, כולל השלמה מאז 22.10. וידאו לא נטען (video-*.fbcdn.net חסום)."
+ "posted_to_sales": true
 }
