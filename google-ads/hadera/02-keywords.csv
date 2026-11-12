@@ -1,0 +1,47 @@
+campaign,ad_group,keyword,match_type,intent,priority,source
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע הים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע הים חדרה,phrase,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע הים,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע הים חדרה למכירה,exact,project-buy,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע הים חדרה מחירים,exact,project-buy,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע הים חדרה קרקע,exact,project-buy,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,מתחם רובע הים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,שכונת רובע הים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,פרויקט רובע הים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,תוכנית רובע הים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,רובע עיר ימים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,עיר ימים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,פרויקט עיר ימים חדרה,exact,project,high,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,עיר ימים חדרה,phrase,project,medium,autocomplete
+Search | Hadera Rova HaYam,01 רובע הים - פרויקט,מתחם 2 חדרה,exact,project,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,רובע הים חדרה סטטוס,exact,research,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,רובע הים אושרה,exact,research,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,רובע הים חדרה מתי הבנייה,exact,research,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,רובע הים חדרה מפה,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,רובע הים עיריית חדרה,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,עיר ימים חדרה סטטוס,exact,research,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,עיר ימים חדרה חדשות,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,חד 2020 רובע הים,exact,research,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,חדרה 2020 רובע הים,exact,research,medium,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,תוכנית חד 2020 חדרה,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,תכנית מתאר חד 2020,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,רובע הים חדרה גוש 10006,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,02 סטטוס ותכנון,עיר ימים חדרה גוש 10006,exact,research,low,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע להשקעה בחדרה,exact,category-geo,high,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע להשקעה בחדרה,phrase,category-geo,high,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,השקעה בקרקע בחדרה,exact,category-geo,high,search
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע בחדרה למכירה,exact,category-geo,high,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע למכירה בחדרה,exact,category-geo,high,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע בחדרה,exact,category-geo,medium,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,מגרש למכירה בחדרה,exact,category-geo,medium,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע לבניה בחדרה,exact,category-geo,medium,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,השקעה בחדרה,exact,category-geo,medium,autocomplete
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,השקעה בנדלן בחדרה,phrase,category-geo,medium,assumed
+Search | Hadera Rova HaYam,03 קרקע להשקעה בחדרה,קרקע בחדרה יד 2,exact,category-geo,low,autocomplete
+Search | Hadera Rova HaYam,04 קרקע על הים,קרקע בחדרה על הים,exact,category-sea,high,autocomplete
+Search | Hadera Rova HaYam,04 קרקע על הים,קרקע על הים בחדרה,exact,category-sea,high,autocomplete
+Search | Hadera Rova HaYam,04 קרקע על הים,קרקע על הים,exact,category-sea,medium,autocomplete
+Search | Hadera Rova HaYam,04 קרקע על הים,קרקע ליד הים,exact,category-sea,medium,autocomplete
+Search | Hadera Rova HaYam,04 קרקע על הים,קרקע למכירה ליד הים,exact,category-sea,medium,autocomplete
+Search | Hadera Rova HaYam,04 קרקע על הים,השקעה על הים,phrase,category-sea,medium,meta-ads
+Search | Hadera Rova HaYam,04 קרקע על הים,נכס על הים,phrase,category-sea,low,ymag-advertorial
