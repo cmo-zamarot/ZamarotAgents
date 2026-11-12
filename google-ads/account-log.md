@@ -51,3 +51,11 @@
 ## Customer Match
 - `CM | לקוחות ורשימת דיוור (Fireberry) | 2026-11`: 9505209468 (CONTACT_INFO, FIRST_PARTY, 540 ימים). **ריקה**: הכלי לא תומך בהעלאת חברים, ולכן ההעלאה דרך ממשק Google Ads.
 - קובץ: 16,793 מיילים ייחודיים ותקינים, מוצפנים ב־SHA-256 (מנורמלים: trim + lowercase). נשמר רק ב־scratchpad, לא בריפו.
+
+## רימרקטינג כללי (PAUSED). יעד זמני: https://www.zamarotgroup.co.il/ (להחליף לדף "השקעות בקרקע" כשיהיה)
+⚠️ באתר הראשי (Wix) אין תג Google Ads, ולכן לידים מהקמפיינים האלה לא נספרים. גם zamarotnadlan.co.il/ מפנה לשם.
+- `RMK Display | כללי - השקעות בקרקע זה צמרות` 24465082999: 15 ₪ ליום, תקרה של 4 ₪, עד 3 חשיפות ליום, אפליקציות מוחרגות, עברית ואנגלית. קבוצה 207807668811, קהל: כל מבקרי zamarotnadlan (9503961899). מודעה רספונסיבית (מייסדים, חדרה, רחובות). utm_campaign=general_rmk.
+  - ניסיון לחבר את רשימת הלקוחות נדחה: גוגל לא מאפשר טרגוט Customer Match ב־Display (CANNOT_TARGET_CUSTOMER_MATCH_USER_LIST).
+- `RMK Demand Gen | לקוחות ודיוור (Fireberry)` 24459136535: 20 ₪ ליום, Maximize Conversions. קבוצה 205925350990: ישראל, עברית ואנגלית, Audience 364312860 (עוטף את רשימת הלקוחות 9505209468). מודעת demandGenMultiAsset. utm_campaign=crm_rmk.
+  - הקהל יעבוד רק אחרי שהמשתמש יעלה את קובץ המיילים לרשימה 9505209468.
+- נכסים: general founders landscape 438732088116, square 438552675185.
