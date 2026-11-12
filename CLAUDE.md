@@ -10,7 +10,7 @@
 
 ## סדר כל ריצה
 1. `{"action":"docs"}` — לקרוא את התיעוד המלא (הוא מתעדכן). להשתמש בשמות הפעולות והפרמטרים שמופיעים שם.
-2. `{"action":"me"}` — הרשאות, שגרה, open_tasks, pending_messages.
+2. `{"action":"me"}` — הרשאות, שגרה, open_tasks, pending_messages, updates. אם `updates` לא ריק: לקרוא כל עדכון ואת הסעיף המתאים בתיעוד, להתאים את העבודה, ואז `updates.ack`.
 3. לכל הודעה ב־pending_messages: `messages.ack` → לבצע → `messages.done` עם תשובה.
 4. לכל משימה ב־open_tasks: `tasks.update` לסטטוס (`todo`/`doing`/`blocked`/`done`) ו־`tasks.comment` עם מה שנעשה.
 5. לפני כתיבה: `voice.get` (טון), ובמידת הצורך `knowledge.list`/`knowledge.get` ומודיעין המתחרים הקיים במערכת (`intel:read`).
