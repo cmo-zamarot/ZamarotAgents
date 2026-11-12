@@ -3,8 +3,8 @@
 
 | קמפיין | סטטוס | תיקייה |
 |---|---|---|
-| חיפוש — רובע הים חדרה (zamarotnadlan.co.il/nof-yam-hadera) | מחקר + נתוני KP + טיוטת תוכנית | `hadera/` |
-| חיפוש — צמרות המדע רחובות (zamarotnadlan.co.il/rehovot-hamada/lp) | לא התחיל | — |
+| חיפוש — רובע הים חדרה (zamarotnadlan.co.il/nof-yam-hadera) | **פעיל**, 100 ₪ ליום | `hadera/` |
+| חיפוש — צמרות המדע רחובות (zamarotnadlan.co.il/rehovot-hamada/lp) | בנוי, מושהה | `rehovot/` |
 | רימרקטינג חדרה / רחובות | לא התחיל | — |
 | רימרקטינג כללי — "השקעות בקרקע זה צמרות" | לא התחיל | — |
 | מתחרים → דף "השקעות בקרקע" | לא התחיל (רשימת מתחרים: `state/competitors.json` + צמרת) | — |
