@@ -1,0 +1,44 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><style>
+@font-face{font-family:Mono;src:url(font_FbMonopolyVF.woff2) format("woff2");font-weight:70 440}
+:root{--navy:#222944;--deep:#161b2e;--accent:#4cc8de;--sand:#f6efe2;--muted:#c3c8d6}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:var(--w);height:var(--h);overflow:hidden;background:var(--navy);font-family:Mono,Arial,sans-serif;color:#fff}
+.f{position:absolute;inset:0;display:none}
+.f.on{display:block}
+.photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(22,27,46,.92) 0%,rgba(22,27,46,.55) 45%,rgba(22,27,46,0) 75%)}
+.txt{position:absolute;inset-inline:6%;bottom:7%;display:flex;flex-direction:column;gap:.25em}
+.k{font-weight:300;color:var(--accent);letter-spacing:.02em}
+.t{font-weight:440;line-height:1.08}
+.s{font-weight:200;color:var(--muted)}
+.panel{position:absolute;inset:0;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.3em;padding:6%}
+.price{font-weight:440;color:var(--accent);line-height:1;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:.08em}
+.hz .price{flex-direction:row;align-items:baseline;gap:.25em}
+.price small{font-weight:200;color:#fff}
+.disc{font-weight:200;color:var(--muted);font-size:.45em}
+.logo{height:42%}
+.cta{display:inline-flex;align-items:center;gap:.4em;background:var(--accent);color:var(--navy);font-weight:440;border-radius:999px;padding:.35em 1em}
+/* horizontal formats */
+.hz .panel{flex-direction:row;justify-content:space-between;padding:0 3%}
+.hz .logo{height:80%}
+.hz .txt{top:0;bottom:0;justify-content:center;inset-inline-start:4%;inset-inline-end:auto}
+.hz .shade{background:linear-gradient(to left,rgba(22,27,46,.95) 0%,rgba(22,27,46,.7) 55%,rgba(22,27,46,.1) 100%)}
+</style></head><body><div id="root"></div>
+<script>
+const q=new URLSearchParams(location.search), W=+q.get('w'), H=+q.get('h'), fr=+q.get('f'), P=q.get('p')||'hadera';
+document.documentElement.style.setProperty('--w',W+'px');document.documentElement.style.setProperty('--h',H+'px');
+const hz=W/H>2.5; if(hz) document.body.classList.add('hz');
+const base=Math.min(W,H*(hz?3.2:1.25)); const fs=hz?H*.26:base*.085;
+document.body.style.fontSize=fs+'px';
+const C={hadera:{img:['img/hadera_06.webp','img/hadera_11.webp'],k:'רובע הים · חדרה',t1:'קרקע מטרים<br>ספורים מהחוף',t2:'יחידות של 100&nbsp;מ״ר',s2:'ברישום מלא בטאבו',price:'399&nbsp;אלף&nbsp;₪',disc:'הקרקע אינה זמינה לבנייה. התמונות להמחשה'},
+ rehovot:{img:['img/rehovot_09.webp','img/rehovot_10.webp'],k:'צמרות המדע · מזרח רחובות',t1:'כ־150 מ׳ משכונה<br>שהופשרה',t2:'קרקע פרטית להשקעה',s2:'הסכם שיתוף בליווי משפטי',price:'199,000&nbsp;₪',disc:'הקרקע אינה זמינה לבנייה. התמונות להמחשה'}}[P];
+if(P==='rehovot'){document.documentElement.style.setProperty('--accent','#d9c0f8');document.documentElement.style.setProperty('--navy','#2b1050');document.documentElement.style.setProperty('--deep','#22093f')}
+const one=t=>t.replace('<br>',' ');
+const F=[
+ `<div class="photo" style="background-image:url(${C.img[0]})"></div><div class="shade"></div><div class="txt"><div class="k" style="font-size:.62em">${C.k}</div><div class="t" style="font-size:${hz?1.1:1.35}em">${hz?one(C.t1):C.t1}</div></div>`,
+ `<div class="photo" style="background-image:url(${C.img[1]})"></div><div class="shade"></div><div class="txt"><div class="t" style="font-size:${hz?1.1:1.3}em">${C.t2}</div><div class="s" style="font-size:.7em">${C.s2}</div></div>`,
+ `<div class="panel"><div class="price" style="font-size:${hz?1.5:2.1}em"><small style="font-size:.38em">החל&nbsp;מ־</small>${C.price}</div>${(H>=90 && !(hz && W<400))?`<div class="disc">${C.disc}</div>`:''}</div>`,
+ `<div class="panel"><img class="logo" src="img/logo-white.svg">${H>=90||hz?`<div class="cta" style="font-size:${hz?.75:.8}em">לפרטים ←</div>`:''}</div>`
+];
+document.getElementById('root').innerHTML=F.map((h,i)=>`<div class="f ${i===fr?'on':''}">${h}</div>`).join('');
+</script></body></html>
